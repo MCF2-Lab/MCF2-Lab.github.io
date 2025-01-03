@@ -18,3 +18,11 @@ Vivian Engineering Center (VEC)-215,
 Department of Mechanical and Aerospcae Engineering,  
 California State University Long Beach
 
+
+What We are Currently Working On:
+======
+{% include base_path %}
+
+{% for post in site.currentprojects reversed %}
+  {% include archive-single.html %}
+{% endfor %}
