@@ -13,6 +13,7 @@ Current Members
 ======
 **Graduae Students:**
 
+5. Jorge Lau Rodriguez, January 2025 - December 2026, M.Sc.,
 4. Elizabeth Alvarez, February 2023 – May 2025, M.Sc.,
 3. Michael Truong, January 2024 – May 2025, M.Sc.,
 2. Heather Leach, January 2025 – December 2025, M.Sc.,
