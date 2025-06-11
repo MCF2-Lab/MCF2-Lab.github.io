@@ -19,6 +19,7 @@ Department of Mechanical and Aerospcae Engineering,
 California State University Long Beach
 
 
+{% comment %}
 What We are Currently Working On:
 ======
 {% include base_path %}
@@ -26,3 +27,4 @@ What We are Currently Working On:
 {% for post in site.currentprojects reversed %}
   {% include archive-single.html %}
 {% endfor %}
+{% endcomment %}
