@@ -13,19 +13,18 @@ Current Members
 ======
 **Graduae Students:**
 
-5. Jorge Lau Rodriguez, January 2025 - December 2026, M.Sc.,
-4. Elizabeth Alvarez, February 2023 – May 2025, M.Sc.,
-3. Michael Truong, January 2024 – May 2025, M.Sc.,
+5. Mark Kim, June 2025 - May 2026, M.Sc.,
+4. Jorge Lau Rodriguez, January 2025 - December 2026, M.Sc.,
+3. Elizabeth Alvarez, February 2023 – May 2025, M.Sc.,
 2. Heather Leach, January 2025 – December 2025, M.Sc.,
 1. Geovanny Rivas, August 2024 – present, M.Sc., Open University student.
 
 **Undergraduae Students:**
 
-5. Luke Cerda, January 2025 – present, B.Sc.,
-4. An Minh Vo, January 2025 – present, B.Sc.,
-3. Jose Noel Martinez, January 2025 – present, B.Sc.,
-2. Mailey Trieu, August 2024 – present, B.Sc.,
-1. Casandra Zamora, August 2024 – present, Independent Study.
+4. Luke Cerda, January 2025 – present, B.Sc.,
+3. An Minh Vo, January 2025 – present, B.Sc.,
+2. Jose Noel Martinez, January 2025 – present, B.Sc.,
+1. Mailey Trieu, August 2024 – present, B.Sc..
 
 Former Members
 ======
@@ -33,6 +32,7 @@ Former Members
 
 *Thesis Advisor*
 
+2. Michael M Truong, M.Sc. Aerospace Engineering, May 2025. M.Sc. Thesis Committee Chair, Thesis: An investigation of the DSMC method's computing efficiency and velocity distributions in rarefied gas flow simulations. First employment: NA,
 1. Andrew Gonzalez, M.Sc. Mechanical and Aerospace Engineering, May 2022. M.Sc. Thesis Committee Chair, Thesis: Computational study on the flame and extinction behavior of a high enthalpy air slab. First employment: Virgin Galactic.
 
 *Non-Thesis*
@@ -58,6 +58,7 @@ Next: Millennium Space Systems.
 
 *Non-Thesis*
 
+14. Casandra Zamora, August 2024 – present, Independent Study.
 13. Alex Aubertin, December 2023 – May 2024, Sandia D flame. Next: USC graduate
 student.
 12. Sindi Ascencio Barrera, January 2023 – October 2023, Hydrogen – Future clean and
