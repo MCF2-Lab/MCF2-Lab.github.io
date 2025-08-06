@@ -21,6 +21,7 @@ Current Members
 
 **Undergraduae Students:**
 
+5. Suzette Mejia, June 2025 – present, B.Sc.,
 4. Luke Cerda, January 2025 – present, B.Sc.,
 3. An Minh Vo, January 2025 – present, B.Sc.,
 2. Jose Noel Martinez, January 2025 – present, B.Sc.,
