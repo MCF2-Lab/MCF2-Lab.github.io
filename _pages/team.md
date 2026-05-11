@@ -13,19 +13,18 @@ Current Members
 ======
 **Graduae Students:**
 
-5. Mark Kim, June 2025 - May 2026, M.Sc.,
-4. Jorge Lau Rodriguez, January 2025 - December 2026, M.Sc.,
-3. Elizabeth Alvarez, February 2023 – May 2025, M.Sc.,
-2. Heather Leach, January 2025 – December 2025, M.Sc.,
-1. Geovanny Rivas, August 2024 – present, M.Sc., Open University student.
+2. Jia Mao, January 2026 - May 2027, M.Sc. 
+1. Elizabeth Alvarez, February 2023 – May 2025, M.Sc.
+
 
 **Undergraduae Students:**
 
-5. Suzette Mejia, June 2025 – present, B.Sc.,
-4. Luke Cerda, January 2025 – present, B.Sc.,
-3. An Minh Vo, January 2025 – present, B.Sc.,
-2. Jose Noel Martinez, January 2025 – present, B.Sc.,
 1. Mailey Trieu, August 2024 – present, B.Sc..
+
+**Visiting Scholar:**
+
+2. Julian Bjorgo, April 2026 – July 2026 (University of Applied Science Western Switzerland - Geneva) Thesis: CFD-based assessment of subsonic transition and FADS performance for glider wing deployment.
+1. Andre Costa Vinagre, April 2026 – July 2026 (University of Applied Science Western Switzerland - Geneva) Thesis: CFD characterization of a supersonic FADS for a reentry glider.
 
 Former Members
 ======
@@ -33,10 +32,14 @@ Former Members
 
 *Thesis Advisor*
 
-2. Michael M Truong, M.Sc. Aerospace Engineering, May 2025. M.Sc. Thesis Committee Chair, Thesis: An investigation of the DSMC method's computing efficiency and velocity distributions in rarefied gas flow simulations. First employment: NA,
+4. Mark Kim, M.Sc.Aerospace Engineering, May 2026, M.Sc. Thesis Committee Chair, Thesis: Quadrature-based moment methods for nonlinear Fokker-Planck equations. First employment: NA.
+3. Heather Leach, M.Sc.Mechanical Engineering, December 2025, M.Sc. Thesis Committee Chair, Thesis: Extension of the battelle two curve method forfracture control in dense-phase carbon dioxide pipelines. First employment: Mechanical Engineer at SPEC Services, Inc.
+2. Michael M Truong, M.Sc. Aerospace Engineering, May 2025. M.Sc. Thesis Committee Chair, Thesis: An investigation of the DSMC method's computing efficiency and velocity distributions in rarefied gas flow simulations. First employment: NA.
 1. Andrew Gonzalez, M.Sc. Mechanical and Aerospace Engineering, May 2022. M.Sc. Thesis Committee Chair, Thesis: Computational study on the flame and extinction behavior of a high enthalpy air slab. First employment: Virgin Galactic.
 
 *Non-Thesis*
+6. Geovanny Rivas, August 2024 – May 2026, M.Sc., Open University student.
+5. Jorge Lau Rodriguez, January 2025 - December 2025, M.Sc..
 4. Quang Nguyen, August 2022 – January 2024, M.Sc. Effect of RANS model choice on the simulation of Sandia D flame.
 3. Brandon Hubbard, August 2022 – January 2024, M.Sc. Simulation of crossing flames in a periodic domain.
 2. Anthony Cervantes, M.Sc. Mechanical and Aerospace Engineering, December 2022. Comp Exam, NASA ZBOT modeling – CFD modeling and validation, First employment: Raytheon Technologies.
@@ -47,6 +50,10 @@ Former Members
 
 *Thesis Advisor*
 
+7. Suzette Mejia, June 2025 – May 2026, B.Sc. Thesis Committee Chair, Thesis: Open-source data visualization tool: visualizing numerical data on an interactive map. Next: TBA.
+6. Luke Cerda, January 2025 – May 2026, B.Sc. Thesis Committee Chair, Thesis: Automated Thermochemistry-to-CFD coupling for liquid propellant rocket nozzle flows. Next: TBA.
+5. An Minh Vo, January 2025 – December 2025, B.Sc. Thesis Committee Chair, Thesis: Computational fluid dynamic baseline analysis for a hybrid attic ventilation system. Next: P2S HVAC industry.
+4. Jose Noel Martinez, January 2025 – December 2025, B.Sc. Thesis Committee Chair, Thesis: Integrated performance and flow analysus of molten carbonate fuel cell tri-generation system. Next: Quality Engineer at ADC Aerospace.
 3. Tryphena Ho, March 2024 – December 2024, B.Sc. Thesis Committee Chair, Thesis:
 Investigation of rotating robots inside body. Collaboration with Tim Colonius at
 Caltech. Next: United Semiconductors.
