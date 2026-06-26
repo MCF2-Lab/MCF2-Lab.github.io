@@ -23,9 +23,6 @@ Current Members
 
 **Visiting Scholar:**
 
-2. Julian Bjorgo, April 2026 – July 2026 (University of Applied Science Western Switzerland - Geneva) Thesis: CFD-based assessment of subsonic transition and FADS performance for glider wing deployment.
-1. Andre Costa Vinagre, April 2026 – July 2026 (University of Applied Science Western Switzerland - Geneva) Thesis: CFD characterization of a supersonic FADS for a reentry glider.
-
 Former Members
 ======
 **Graduae Students:**
@@ -66,7 +63,7 @@ Next: Millennium Space Systems.
 
 *Non-Thesis*
 
-14. Casandra Zamora, August 2024 – present, Independent Study.
+14. Casandra Zamora, August 2024 – December 2024, Independent Study.
 13. Alex Aubertin, December 2023 – May 2024, Sandia D flame. Next: USC graduate
 student.
 12. Sindi Ascencio Barrera, January 2023 – October 2023, Hydrogen – Future clean and
@@ -93,6 +90,8 @@ ZBOT modeling – Geometry analysis, Next: Rivian Automotive.
 
 **Visiting Scholar:**
 
+4. Julian Bjorgo, April 2026 – July 2026 (University of Applied Science Western Switzerland - Geneva) Thesis: CFD-based assessment of subsonic transition and FADS performance for glider wing deployment.
+3. Andre Costa Vinagre, April 2026 – July 2026 (University of Applied Science Western Switzerland - Geneva) Thesis: CFD characterization of a supersonic FADS for a reentry glider.
 2. Henry Nguyen, May 2024 – August 2024 (University of Applied Science Western Switzerland - Geneva) Thesis: LES modeling of Confined Impinging Jet Mixers.
 1. Haroun Naina, May 2022 – August 2022 (University of Applied Science Western Switzerland - Geneva) Thesis: Transient modeling of Multi-inlet vortex reactor. First employment: Graduate student at École Polytechnique Fédérale de Lausanne.
 
