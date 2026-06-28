@@ -11,13 +11,13 @@ Ehsan Madadi, Ph.D., Assistant Professor of Mechanical and Aerospace Engineering
 
 Current Members
 ======
-**Graduae Students:**
+**Graduate Students:**
 
 2. Jia Mao, January 2026 - May 2027, M.Sc. 
 1. Elizabeth Alvarez, February 2023 – May 2025, M.Sc.
 
 
-**Undergraduae Students:**
+**Undergraduate Students:**
 
 1. Mailey Trieu, August 2024 – present, B.Sc..
 
@@ -25,12 +25,12 @@ Current Members
 
 Former Members
 ======
-**Graduae Students:**
+**Graduate Students:**
 
 *Thesis Advisor*
 
-4. Mark Kim, M.Sc.Aerospace Engineering, May 2026, M.Sc. Thesis Committee Chair, Thesis: Quadrature-based moment methods for nonlinear Fokker-Planck equations. First employment: NA.
-3. Heather Leach, M.Sc.Mechanical Engineering, December 2025, M.Sc. Thesis Committee Chair, Thesis: Extension of the battelle two curve method forfracture control in dense-phase carbon dioxide pipelines. First employment: Mechanical Engineer at SPEC Services, Inc.
+4. Mark Kim, M.Sc. Aerospace Engineering, May 2026, M.Sc. Thesis Committee Chair, Thesis: Quadrature-based moment methods for nonlinear Fokker-Planck equations. First employment: NA.
+3. Heather Leach, M.Sc. Mechanical Engineering, December 2025, M.Sc. Thesis Committee Chair, Thesis: Extension of the battelle two curve method for fracture control in dense-phase carbon dioxide pipelines. First employment: Mechanical Engineer at SPEC Services, Inc.
 2. Michael M Truong, M.Sc. Aerospace Engineering, May 2025. M.Sc. Thesis Committee Chair, Thesis: An investigation of the DSMC method's computing efficiency and velocity distributions in rarefied gas flow simulations. First employment: NA.
 1. Andrew Gonzalez, M.Sc. Mechanical and Aerospace Engineering, May 2022. M.Sc. Thesis Committee Chair, Thesis: Computational study on the flame and extinction behavior of a high enthalpy air slab. First employment: Virgin Galactic.
 
@@ -43,14 +43,14 @@ Former Members
 1. Jack Heneghan, M.Sc. Mechanical and Aerospace Engineering, December 2022. Comp Exam, NASA ZBOT modeling – Mesh analysis, First employment: Virgin Galactic.
 
 
-**Undergraduae Students:**
+**Undergraduate Students:**
 
 *Thesis Advisor*
 
 7. Suzette Mejia, June 2025 – May 2026, B.Sc. Thesis Committee Chair, Thesis: Open-source data visualization tool: visualizing numerical data on an interactive map. Next: TBA.
 6. Luke Cerda, January 2025 – May 2026, B.Sc. Thesis Committee Chair, Thesis: Automated Thermochemistry-to-CFD coupling for liquid propellant rocket nozzle flows. Next: TBA.
 5. An Minh Vo, January 2025 – December 2025, B.Sc. Thesis Committee Chair, Thesis: Computational fluid dynamic baseline analysis for a hybrid attic ventilation system. Next: P2S HVAC industry.
-4. Jose Noel Martinez, January 2025 – December 2025, B.Sc. Thesis Committee Chair, Thesis: Integrated performance and flow analysus of molten carbonate fuel cell tri-generation system. Next: Quality Engineer at ADC Aerospace.
+4. Jose Noel Martinez, January 2025 – December 2025, B.Sc. Thesis Committee Chair, Thesis: Integrated performance and flow analysis of molten carbonate fuel cell tri-generation system. Next: Quality Engineer at ADC Aerospace.
 3. Tryphena Ho, March 2024 – December 2024, B.Sc. Thesis Committee Chair, Thesis:
 Investigation of rotating robots inside body. Collaboration with Tim Colonius at
 Caltech. Next: United Semiconductors.
@@ -94,15 +94,3 @@ ZBOT modeling – Geometry analysis, Next: Rivian Automotive.
 3. Andre Costa Vinagre, April 2026 – July 2026 (University of Applied Science Western Switzerland - Geneva) Thesis: CFD characterization of a supersonic FADS for a reentry glider.
 2. Henry Nguyen, May 2024 – August 2024 (University of Applied Science Western Switzerland - Geneva) Thesis: LES modeling of Confined Impinging Jet Mixers.
 1. Haroun Naina, May 2022 – August 2022 (University of Applied Science Western Switzerland - Geneva) Thesis: Transient modeling of Multi-inlet vortex reactor. First employment: Graduate student at École Polytechnique Fédérale de Lausanne.
-
-
-Join Our Team
-======
-
-**For Current CSULB Students:**
-
-If you are a current student at CSULB interested in conducting research in our group for your Bachelor's or Master's thesis, I encourage you to first read our group's publications to familiarize yourself with our research areas. If you find a topic that resonates with your interests, please email me with the subject line "Interest in *specific topic*." In your email, include a brief description of how this topic aligns with your career aspirations and how you believe it will contribute to your future goals. I am always open to chatting, collaborating, and serving on committees if my time and expertise allows.
-
-**For Prospective Students:**
-
-Students who are considering applying to CSULB and are interested in joining the MCF2 Lab are encouraged to proceed with the university admission process. While I am eager to welcome new talents into our group, please note that I am unable to assist with admissions. All prospective students must be admitted to CSULB through the official admissions office. Once admitted, please reach out to me following the same guidelines provided for current students.
