@@ -72,15 +72,11 @@ This project focuses on acoustic streaming and continuum-phase response in ultra
 
 The core research question is: **How do ultrasonic forcing frequency, amplitude, and orientation change the carrier-fluid velocity field and generate Eckart and Rayleigh streaming?**
 
-**Project type:** Undergraduate honors thesis
-
-**Research area:** Ultrasonic multiphase flows, CFD, acoustic streaming, continuum-phase response
-
-**Expected effort:** Normally 6–10 hours per week during the semester
-
-**Support:** Paid research support may be available, subject to CSULB Research Foundation approval, available project funds, and satisfactory project progress
-
-**Application subject line:** ACS-PRF Honors Thesis Application - Acoustic Streaming and Continuum-Phase Response
+* **Project type:** Undergraduate honors thesis
+* **Research area:** Ultrasonic multiphase flows, CFD, acoustic streaming, continuum-phase response
+* **Expected effort:** Normally 6–10 hours per week during the semester
+* **Support:** Paid research support may be available, subject to CSULB Research Foundation approval, available project funds, and satisfactory project progress
+* **Application subject line:** ACS-PRF Honors Thesis Application - Acoustic Streaming and Continuum-Phase Response
 
 The student may contribute to reduced numerical modeling, CFD or coupled simulation cases, verification and sensitivity studies, and analysis of standing-wave and acoustic streaming behavior. Expected outcomes include a verified baseline standing-wave case, mesh/time-step sensitivity results, a streaming map as a function of frequency and acoustic energy density, and thesis- and poster-ready results.
 
@@ -92,15 +88,11 @@ This project focuses on low-Stokes-number nanoparticle transport under ultrasoni
 
 The core research question is: **When do low-Stokes-number particles stop behaving like passive tracers and show directed migration, clustering, or dispersion under ultrasonic forcing?**
 
-**Project type:** Undergraduate honors thesis
-
-**Research area:** Nanoparticle transport, ultrasonic multiphase flows, CFD, drift-diffusion modeling
-
-**Expected effort:** Normally 6–10 hours per week during the semester
-
-**Support:** Paid research support may be available, subject to CSULB Research Foundation approval, available project funds, and satisfactory project progress
-
-**Application subject line:** ACS-PRF Honors Thesis Application - Low-Stokes-Number Nanoparticle Transport Under Insonation
+* **Project type:** Undergraduate honors thesis
+* **Research area:** Nanoparticle transport, ultrasonic multiphase flows, CFD, drift-diffusion modeling
+* **Expected effort:** Normally 6–10 hours per week during the semester
+* **Support:** Paid research support may be available, subject to CSULB Research Foundation approval, available project funds, and satisfactory project progress
+* **Application subject line:** ACS-PRF Honors Thesis Application - Low-Stokes-Number Nanoparticle Transport Under Insonation
 
 The student may contribute to reduced drift-diffusion modeling, particle transport analysis, verification studies, and regime-map development. Expected outcomes include a 1D drift-diffusion solver and verification notebook, particle migration time-scale estimates, a regime map separating passive-tracer, drift-dominated, and diffusion-dominated behavior, and thesis-ready interpretation of low-Stokes-number transport.
 
@@ -112,15 +104,11 @@ This project focuses on optimizing ultrasound configurations for disperse-phase 
 
 The core research question is: **Which ultrasound configuration gives useful phase separation or aggregation while avoiding excessive streaming-driven remixing?**
 
-**Project type:** Undergraduate honors thesis
-
-**Research area:** Ultrasonic multiphase flows, disperse-phase manipulation, CFD, acoustic configuration optimization
-
-**Expected effort:** Normally 6–10 hours per week during the semester
-
-**Support:** Paid research support may be available, subject to CSULB Research Foundation approval, available project funds, and satisfactory project progress
-
-**Application subject line:** ACS-PRF Honors Thesis Application - Ultrasound Configuration Optimization for Disperse-Phase Manipulation
+* **Project type:** Undergraduate honors thesis
+* **Research area:** Ultrasonic multiphase flows, disperse-phase manipulation, CFD, acoustic configuration optimization
+* **Expected effort:** Normally 6–10 hours per week during the semester
+* **Support:** Paid research support may be available, subject to CSULB Research Foundation approval, available project funds, and satisfactory project progress
+* **Application subject line:** ACS-PRF Honors Thesis Application - Ultrasound Configuration Optimization for Disperse-Phase Manipulation
 
 The student may contribute to reduced numerical modeling, CFD or coupled simulation cases, sensitivity studies, and analysis of vertical, horizontal, intermittent, and multi-directional ultrasound configurations. Expected outcomes include a ranked operating-window map, a recommendation for configurations to use in later GPBE/QBMM simulations, and thesis- and poster-ready results.
 
@@ -132,15 +120,11 @@ This project focuses on optimizing ultrasound configurations for disperse-phase 
 
 The core research question is: **Which ultrasound configuration gives useful phase separation or aggregation while avoiding excessive streaming-driven remixing?**
 
-**Project type:** Undergraduate honors thesis
-
-**Research area:** Ultrasonic multiphase flows, disperse-phase manipulation, CFD, acoustic configuration optimization
-
-**Expected effort:** Normally 6–10 hours per week during the semester
-
-**Support:** Paid research support may be available, subject to CSULB Research Foundation approval, available project funds, and satisfactory project progress
-
-**Application subject line:** ACS-PRF Honors Thesis Application - Ultrasound Configuration Optimization for Disperse-Phase Manipulation
+* **Project type:** Undergraduate honors thesis
+* **Research area:** Ultrasonic multiphase flows, disperse-phase manipulation, CFD, acoustic configuration optimization
+* **Expected effort:** Normally 6–10 hours per week during the semester
+* **Support:** Paid research support may be available, subject to CSULB Research Foundation approval, available project funds, and satisfactory project progress
+* **Application subject line:** ACS-PRF Honors Thesis Application - Ultrasound Configuration Optimization for Disperse-Phase Manipulation
 
 The student may contribute to reduced numerical modeling, CFD or coupled simulation cases, sensitivity studies, and analysis of vertical, horizontal, intermittent, and multi-directional ultrasound configurations. Expected outcomes include a ranked operating-window map, a recommendation for configurations to use in later GPBE/QBMM simulations, and thesis- and poster-ready results.
 
