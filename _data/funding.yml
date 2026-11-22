@@ -1,7 +1,7 @@
 # All research and education support, newest first.
 # The five featured projects are in projects.yml; this is the full record.
 - { year: 2026, sponsor: "NASA", title: "Physics-guided lunar plume ejecta sensing", role: "PI" }
-- { year: 2026, sponsor: "ACS Petroleum Research Fund (UNI)", title: "Ultrasonic manipulation of disperse phase dynamics in multiphase systems", role: "Lead PI" }
+- { year: 2026, sponsor: "ACS Petroleum Research Fund (UNI)", title: "Ultrasonic manipulation of disperse phase dynamics in multiphase systems", role: "PI" }
 - { year: 2026, sponsor: "National Science Foundation", title: "Multiscale multiphase mixing coupled with particle precipitation and transport", role: "PI" }
 - { year: 2026, sponsor: "Army Research Office (via Purdue University)", title: "Energy transport modulation for advanced resonant acoustic mixing", role: "Co-PI" }
 - { year: 2026, sponsor: "CSU Transportation Consortium (TRANSPORT)", title: "Brake ultrafine particle microphysics under regenerative braking of heavy-duty trucks", role: "PI" }
