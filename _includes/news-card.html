@@ -1,0 +1,17 @@
+{%- assign item = include.item -%}
+{%- assign cat = item.venue | default: "Update" -%}
+<article class="news-card" data-reveal data-filter-item data-year="{{ item.date | date: '%Y' }}" data-cat="{{ cat | slugify }}">
+  <a class="news-card__link" href="{{ item.url | relative_url }}">
+    <div class="news-card__media{% unless item.image %} news-card__media--empty{% endunless %}">
+      {%- assign cslug = cat | slugify -%}
+      {%- case cslug -%}{%- when "graduation" -%}{%- assign ic = "cap" -%}{%- when "conference" -%}{%- assign ic = "message" -%}{%- when "scholarship-and-awards" -%}{%- assign ic = "award" -%}{%- when "outreach-activities" or "seminar" -%}{%- assign ic = "users" -%}{%- else -%}{%- assign ic = "spark" -%}{%- endcase -%}
+      {%- if item.image %}<img src="{{ item.image | relative_url }}" alt="" loading="lazy" decoding="async">{% else %}<span class="news-card__ph">{% include icon.html name=ic size=44 %}<span>{{ item.date | date: "%B %Y" }}</span></span>{% endif %}
+      <span class="badge badge--{{ cat | slugify }}">{{ cat }}</span>
+    </div>
+    <div class="news-card__body">
+      <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+      <h3>{{ item.title }}</h3>
+      {%- unless include.compact %}<p>{{ item.content | strip_html | normalize_whitespace | truncatewords: 26 }}</p>{% endunless %}
+    </div>
+  </a>
+</article>

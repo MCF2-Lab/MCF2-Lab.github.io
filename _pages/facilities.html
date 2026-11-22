@@ -1,0 +1,46 @@
+---
+title: "Facilities"
+permalink: /facilities/
+eyebrow: "Facilities"
+lead: "Our simulations run on dedicated lab workstations, a condo share of the CSULB central high-performance computing cluster (HPC2) and cloud allocations."
+wide: true
+---
+<section class="section">
+  <div class="container">
+    <div class="facility" data-reveal>
+      <span class="card__icon card__icon--lg">{% include icon.html name="cpu" size=30 %}</span>
+      <div>
+        <p class="eyebrow">In the lab · {{ site.lab.room_short }}</p>
+        <h2>Group workstations</h2>
+        <p>Four Dell Precision 7920 tower workstations, each with dual Intel Xeon Gold 6230 processors and dual NVIDIA Quadro RTX 5000 GPUs, for code development, pre- and post-processing, visualization and mid-size production runs.</p>
+      </div>
+    </div>
+
+    <div class="facility" data-reveal>
+      <span class="card__icon card__icon--lg">{% include icon.html name="server" size=30 %}</span>
+      <div>
+        <p class="eyebrow">On campus</p>
+        <h2>CSULB Central HPC Cluster 2 (HPC2)</h2>
+        <p>The Central HPC environment of the Division of Information Technology (DoIT) gives the group access to shared high-performance hardware and software with professional system administration. The cluster is housed in the University Tier 3 Data Center. The MCF2 Lab is an HPC condo owner under the campus Institution/Condo Model.</p>
+      </div>
+    </div>
+    <div class="spec-grid" data-reveal>
+      <div class="spec"><span class="spec__v" data-count="1664">1,664</span><span class="spec__l">CPU cores on 36 nodes</span></div>
+      <div class="spec"><span class="spec__v" data-count="140800">140,800</span><span class="spec__l">CUDA cores</span></div>
+      <div class="spec"><span class="spec__v" data-count="20">20</span><span class="spec__l">GPUs on 5 GPU nodes</span></div>
+      <div class="spec"><span class="spec__v">19 TB</span><span class="spec__l">Total memory</span></div>
+      <div class="spec"><span class="spec__v">InfiniBand</span><span class="spec__l">Internal network</span></div>
+      <div class="spec"><span class="spec__v">1 TB</span><span class="spec__l">SSD scratch per node</span></div>
+    </div>
+    <p class="muted small">HPC2 configuration as published by CSULB DoIT; operating system Red Hat Enterprise Linux 8.</p>
+
+    <div class="facility" data-reveal>
+      <span class="card__icon card__icon--lg">{% include icon.html name="cloud" size=30 %}</span>
+      <div>
+        <p class="eyebrow">Off campus</p>
+        <h2>Microsoft Azure</h2>
+        <p>We maintain an allocation on Microsoft Azure clusters for additional capacity and large parameter sweeps.</p>
+      </div>
+    </div>
+  </div>
+</section>

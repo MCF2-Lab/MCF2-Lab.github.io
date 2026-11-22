@@ -1,0 +1,209 @@
+# People of the MCF2 Lab.
+# photo: optional path under /images/. Without it, initials are shown.
+# next: first position after the lab (alumni only).
+
+current:
+  - name: "Jia Mao"
+    role: "M.S. student"
+    since: "January 2026"
+    until: "expected May 2027"
+  - name: "Linh Do"
+    role: "Undergraduate honors student"
+
+alumni:
+  - group: "Graduate students — thesis"
+    people:
+      - name: "Elizabeth Alvarez"
+        degree: "M.S. Mechanical Engineering"
+        year: 2026
+        thesis: "Computational analysis of acoustic body force in inhomogeneous fluids"
+      - name: "Mark Kim"
+        degree: "M.S. Aerospace Engineering"
+        year: 2026
+        thesis: "Quadrature-based moment methods for nonlinear Fokker–Planck equations"
+      - name: "Heather Leach"
+        degree: "M.S. Mechanical Engineering"
+        year: 2025
+        thesis: "Extension of the Battelle two-curve method for fracture control in dense-phase carbon dioxide pipelines"
+        next: "Mechanical Engineer, SPEC Services, Inc."
+      - name: "Michael M. Truong"
+        degree: "M.S. Aerospace Engineering"
+        year: 2025
+        thesis: "An investigation of the DSMC method's computing efficiency and velocity distributions in rarefied gas flow simulations"
+      - name: "Andrew Gonzalez"
+        degree: "M.S. Mechanical and Aerospace Engineering"
+        year: 2022
+        thesis: "Computational study on the flame and extinction behavior of a high enthalpy air slab"
+        next: "Virgin Galactic"
+
+  - group: "Graduate students — non-thesis"
+    people:
+      - name: "Geovanny Rivas"
+        degree: "M.S., Open University"
+        year: 2026
+      - name: "Jorge Lau Rodriguez"
+        degree: "M.S."
+        year: 2025
+      - name: "Quang Nguyen"
+        degree: "M.S."
+        year: 2024
+        thesis: "Effect of RANS model choice on the simulation of Sandia flame D"
+      - name: "Brandon Hubbard"
+        degree: "M.S."
+        year: 2024
+        thesis: "Simulation of crossing flames in a periodic domain"
+      - name: "Anthony Cervantes"
+        degree: "M.S. Mechanical and Aerospace Engineering"
+        year: 2022
+        thesis: "NASA ZBOT modeling: CFD modeling and validation"
+        next: "Raytheon Technologies"
+      - name: "Jack Heneghan"
+        degree: "M.S. Mechanical and Aerospace Engineering"
+        year: 2022
+        thesis: "NASA ZBOT modeling: mesh analysis"
+        next: "Virgin Galactic"
+
+  - group: "Undergraduate students — honors thesis"
+    people:
+      - name: "Mailey Trieu"
+        degree: "B.S. Aerospace Engineering"
+        year: 2026
+        thesis: "Bubble dynamics in the anterior eye during phacoemulsification"
+      - name: "Suzette Mejia"
+        degree: "B.S. Computer Science and Engineering"
+        year: 2026
+        thesis: "Open-source data visualization tool: visualizing numerical data on an interactive map"
+      - name: "Luke Cerda"
+        degree: "B.S. Aerospace Engineering"
+        year: 2026
+        thesis: "Automated thermochemistry-to-CFD coupling for liquid propellant rocket nozzle flows"
+      - name: "An Minh Vo"
+        degree: "B.S. Mechanical Engineering"
+        year: 2025
+        thesis: "Computational fluid dynamic baseline analysis for a hybrid attic ventilation system"
+        next: "P2S (HVAC)"
+      - name: "Jose Noel Martinez"
+        degree: "B.S. Mechanical Engineering"
+        year: 2025
+        thesis: "Integrated performance and flow analysis of a molten carbonate fuel cell tri-generation system"
+        next: "Quality Engineer, ADC Aerospace"
+      - name: "Tryphena Ho"
+        degree: "B.S. Mechanical Engineering"
+        year: 2024
+        thesis: "Investigation of rotating robots inside the body (with Tim Colonius, Caltech)"
+        next: "Design Engineer, United Semiconductors"
+      - name: "Carlos Medina"
+        degree: "B.S. Mechanical Engineering"
+        year: 2024
+        thesis: "Damage mechanisms associated with rotating equipment in renewable fuels refineries"
+        next: "Marathon Oil"
+      - name: "Thomas Nguyen"
+        degree: "B.S. Aerospace Engineering"
+        year: 2022
+        thesis: "Application of RANS closures to modeling a multi-inlet vortex reactor"
+        next: "Millennium Space Systems"
+
+  - group: "Undergraduate researchers"
+    people:
+      - name: "Casandra Zamora"
+        degree: "Independent study"
+        year: 2024
+      - name: "Alex Aubertin"
+        degree: "B.S."
+        year: 2024
+        thesis: "Sandia flame D"
+        next: "Graduate student, USC"
+      - name: "Ailar Naghshineh"
+        degree: "B.S."
+        year: 2024
+        thesis: "Modeling of polydisperse sprays"
+        next: "NASA"
+      - name: "Sindi Ascencio Barrera"
+        degree: "B.S."
+        year: 2023
+        thesis: "Hydrogen: future clean and sustainable energy"
+        next: "Quality Engineer, PCC"
+      - name: "Nickey Diorio"
+        degree: "B.S."
+        year: 2023
+        thesis: "NASA ZBOT modeling: validation and data visualization"
+        next: "Graduate student, Texas A&M"
+      - name: "Aaron Gutierrez"
+        degree: "B.S. Mechanical Engineering"
+        year: 2022
+        thesis: "NASA ZBOT modeling: data visualization and report writing"
+      - name: "Rory G. Mellis"
+        degree: "B.S. Mechanical Engineering"
+        year: 2022
+        thesis: "Studies on confined impinging jet reactors"
+      - name: "Kevin Angyous"
+        degree: "B.S. Aerospace Engineering"
+        year: 2022
+        thesis: "Droplet modeling near solid surfaces"
+        next: "Graduate student, USC"
+      - name: "Angel Martinez"
+        degree: "B.S. Mechanical Engineering"
+        year: 2022
+        next: "Boeing"
+      - name: "Phillip Ho"
+        degree: "B.S. Mechanical Engineering"
+        year: 2022
+        thesis: "Geometry analysis and design for impinging and vortex reactors"
+        next: "U.S. Navy"
+      - name: "Ricardo Manzano"
+        degree: "B.S. Mechanical Engineering"
+        year: 2022
+        next: "Graduate student, CSULB"
+      - name: "Vincente Abatay"
+        degree: "B.S. Biology (OURS Program)"
+        year: 2022
+      - name: "Devon Kuriso"
+        degree: "B.S. Mechanical Engineering (OURS Program)"
+        year: 2022
+      - name: "Jessica Rogado"
+        degree: "B.S. Mechanical Engineering and B.A. Physics"
+        year: 2022
+        thesis: "NASA ZBOT modeling: geometry analysis"
+        next: "Rivian Automotive"
+
+  - group: "Visiting scholars"
+    note: "Bachelor's thesis students from HEPIA, University of Applied Sciences and Arts Western Switzerland, Geneva, co-supervised with Prof. Roberto Putzu as part of our collaboration with HEPIA."
+    people:
+      - name: "Julian Bjørgo"
+        degree: "HEPIA, Geneva"
+        year: 2026
+        thesis: "CFD-based assessment of subsonic transition and FADS performance for glider wing deployment"
+        next: "Graded 6/6, avec félicitations du jury"
+      - name: "André Costa Vinagre"
+        degree: "HEPIA, Geneva"
+        year: 2026
+        thesis: "CFD characterization of a supersonic FADS for a reentry glider"
+        next: "Graded 6/6, avec félicitations du jury"
+      - name: "Henry Nguyen"
+        degree: "HEPIA, Geneva"
+        year: 2024
+        thesis: "LES modeling of confined impinging jet mixers"
+      - name: "Haroun Naina"
+        degree: "HEPIA, Geneva"
+        year: 2022
+        thesis: "Transient modeling of a multi-inlet vortex reactor"
+        next: "Graduate student, EPFL"
+
+# Shown as "Where our alumni went"
+destinations:
+  - "Virgin Galactic"
+  - "Raytheon Technologies"
+  - "Boeing"
+  - "NASA"
+  - "Rivian Automotive"
+  - "Millennium Space Systems"
+  - "United Semiconductors"
+  - "Marathon Oil"
+  - "ADC Aerospace"
+  - "SPEC Services"
+  - "P2S"
+  - "PCC"
+  - "U.S. Navy"
+  - "EPFL"
+  - "USC"
+  - "Texas A&M"

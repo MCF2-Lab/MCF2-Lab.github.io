@@ -1,0 +1,19 @@
+{%- assign p = include.pub -%}
+{%- assign authors = p.authors
+    | replace: "E. Madadi-Kandjani", "<strong class='me'>E. Madadi-Kandjani</strong>"
+    | replace: "{UG}", "<sup class='stu' title='Undergraduate student in the lab'>UG</sup>"
+    | replace: "{G}", "<sup class='stu stu--g' title='Graduate student in the lab'>G</sup>" -%}
+{%- assign has_student = false -%}{%- if p.authors contains "{" -%}{%- assign has_student = true -%}{%- endif -%}
+<li class="pub" data-filter-item data-type="{{ include.type }}" data-topic="{{ p.topic }}" data-year="{{ p.year }}" data-student="{{ has_student }}" data-search="{{ p.title | downcase | escape }} {{ p.authors | downcase | escape }} {{ p.venue | downcase | escape }}">
+  <span class="pub__id">{{ p.id }}</span>
+  <div class="pub__body">
+    <p class="pub__title">{% if p.doi %}<a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">{{ p.title }}</a>{% elsif p.url %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+    <p class="pub__authors">{{ authors }}</p>
+    <p class="pub__venue"><em>{{ p.venue }}</em>{% if p.details and p.details != "" %}, {{ p.details }}{% endif %} ({{ p.year }})</p>
+    <p class="pub__tags">
+      <span class="chip chip--topic">{{ site.data.publications.topics[p.topic] }}</span>
+      {%- if has_student %}<span class="chip chip--student">{% include icon.html name="users" size=13 %} Student author</span>{% endif -%}
+      {%- if p.doi %}<a class="chip chip--link" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI {{ p.doi }} {% include icon.html name="external" size=12 %}</a>{% endif -%}
+    </p>
+  </div>
+</li>

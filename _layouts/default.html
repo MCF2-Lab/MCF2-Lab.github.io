@@ -1,31 +1,18 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body class="{{ page.body_class }}">
+{% include header.html %}
+<main id="main" tabindex="-1">
+{{ content }}
+</main>
+{% include footer.html %}
+<div class="lightbox" data-lightbox-root hidden role="dialog" aria-modal="true" aria-label="Enlarged figure">
+  <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close">{% include icon.html name="close" size=26 %}</button>
+  <figure class="lightbox__figure"><div class="lightbox__media" data-lightbox-media></div><figcaption data-lightbox-caption></figcaption></figure>
+</div>
+<script src="{{ '/assets/js/lab.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+</body>
 </html>

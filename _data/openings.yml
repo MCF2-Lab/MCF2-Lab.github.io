@@ -1,0 +1,7 @@
+# Open positions shown on the Join Us page. Leave the list empty ([]) when none.
+# Example:
+# - type: "M.S. thesis · funded"
+#   title: "Acoustic population balance modeling"
+#   description: "Short description of the project, requirements and start date."
+#   subject: "MS Thesis - Acoustic PBE - Your Name"
+[]

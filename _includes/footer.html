@@ -1,25 +1,35 @@
-{% include base_path %}
-
-{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    {% if site.atom_feed.hide != true %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endif %}
-  </ul>
-</div>
-{% endif %}
-
-<div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated {{ "now" | date: '%Y-%m-%d' %}}
-</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="{{ '/images/logo-mark.svg' | relative_url }}" alt="" width="44" height="44">
+        <p class="footer-brand__name">{{ site.long_title }}</p>
+        <p class="footer-muted">{{ site.lab.department }}<br>{{ site.lab.university }}</p>
+      </div>
+      <div>
+        <h2 class="footer-h">Visit</h2>
+        <p class="footer-muted">{% include icon.html name="pin" size=16 %} {{ site.lab.room }}<br>{{ site.lab.street }}<br>{{ site.lab.city }}</p>
+      </div>
+      <div>
+        <h2 class="footer-h">Contact</h2>
+        <p><a href="mailto:{{ site.pi.email }}">{% include icon.html name="mail" size=16 %} {{ site.pi.email }}</a></p>
+        <ul class="footer-social">
+          {%- if site.links.github != "" %}<li><a href="{{ site.links.github }}" aria-label="GitHub">{% include icon.html name="github" size=18 %}</a></li>{% endif -%}
+          {%- if site.links.linkedin != "" %}<li><a href="{{ site.links.linkedin }}" aria-label="LinkedIn">in</a></li>{% endif %}
+          <li><a href="{{ '/news/feed.xml' | relative_url }}" aria-label="News feed">{% include icon.html name="rss" size=18 %}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-h">Explore</h2>
+        <ul class="footer-links">
+          {%- for item in site.data.navigation %}<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>{% endfor %}
+          <li><a href="{{ '/pi/' | relative_url }}">Principal Investigator</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Research supported by NSF, the ACS Petroleum Research Fund, NASA, the Army Research Office, the CSU Transportation Consortium and California State University.</p>
+      <p>&copy; {{ site.time | date: "%Y" }} MCF2 Lab, California State University, Long Beach</p>
+    </div>
+  </div>
+</footer>

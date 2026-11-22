@@ -1,0 +1,82 @@
+---
+title: "Publications"
+permalink: /publications/
+eyebrow: "Publications"
+lead: "Peer-reviewed articles, conference presentations, software and invited talks. Lab students are marked G (graduate) and UG (undergraduate)."
+wide: true
+---
+{%- assign P = site.data.publications -%}
+{%- assign student_n = 0 -%}
+{%- for p in P.journal -%}{%- if p.authors contains "{" -%}{%- assign student_n = student_n | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- for p in P.conference -%}{%- if p.authors contains "{" -%}{%- assign student_n = student_n | plus: 1 -%}{%- endif -%}{%- endfor -%}
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="pub-summary">
+      <div class="stat stat--light" data-reveal><span class="stat__value" data-count="{{ P.journal.size }}">{{ P.journal.size }}</span><span class="stat__label">Journal articles</span></div>
+      <div class="stat stat--light" data-reveal><span class="stat__value" data-count="{{ P.conference.size }}">{{ P.conference.size }}</span><span class="stat__label">Conference presentations</span></div>
+      <div class="stat stat--light" data-reveal><span class="stat__value" data-count="{{ student_n }}">{{ student_n }}</span><span class="stat__label">With lab student authors</span></div>
+      <div class="stat stat--light" data-reveal><span class="stat__value" data-count="{{ P.software.size }}">{{ P.software.size }}</span><span class="stat__label">Software releases</span></div>
+    </div>
+
+    <figure class="viz" data-reveal>
+      <figcaption class="viz__title">Output by year <span class="muted">· journal articles and conference presentations</span></figcaption>
+      <div class="viz__legend" aria-hidden="true"><span><i class="key key--s1"></i>Journal articles</span><span><i class="key key--s2"></i>Conference presentations</span></div>
+      <div class="viz__plot" data-pubchart></div>
+      <details class="viz__table">
+        <summary>Show as table</summary>
+        <table>
+          <thead><tr><th scope="col">Year</th><th scope="col">Journal</th><th scope="col">Conference</th></tr></thead>
+          <tbody>
+          {%- for y in (2012..2026) reversed %}
+            {%- assign j = P.journal | where: "year", y | size -%}{%- assign c = P.conference | where: "year", y | size -%}
+            {%- if j > 0 or c > 0 %}<tr><td>{{ y }}</td><td>{{ j }}</td><td>{{ c }}</td></tr>{% endif %}
+          {%- endfor %}
+          </tbody>
+        </table>
+      </details>
+      <script type="application/json" data-pubdata>[{%- for y in (2012..2026) -%}{%- assign j = P.journal | where: "year", y | size -%}{%- assign c = P.conference | where: "year", y | size -%}{"y":{{ y }},"j":{{ j }},"c":{{ c }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}]</script>
+    </figure>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="filters" data-filter-root="pubs">
+      <div class="filters__row" role="group" aria-label="Type">
+        <button type="button" class="filter-btn is-active" data-filter="type" data-value="all">All</button>
+        <button type="button" class="filter-btn" data-filter="type" data-value="journal">Journal articles</button>
+        <button type="button" class="filter-btn" data-filter="type" data-value="conference">Conferences</button>
+        <button type="button" class="filter-btn" data-filter="type" data-value="software">Software</button>
+        <button type="button" class="filter-btn" data-filter="type" data-value="talk">Invited talks</button>
+      </div>
+      <div class="filters__row">
+        <label class="select">
+          <span class="visually-hidden">Topic</span>
+          <select data-filter-select="topic">
+            <option value="all">All topics</option>
+            {%- for t in P.topics %}<option value="{{ t[0] }}">{{ t[1] }}</option>{% endfor %}
+          </select>
+        </label>
+        <label class="search">
+          {% include icon.html name="search" size=18 %}
+          <span class="visually-hidden">Search publications</span>
+          <input type="search" placeholder="Search title, author or venue" data-filter-search>
+        </label>
+        <label class="toggle"><input type="checkbox" data-filter-student> Student-authored only</label>
+      </div>
+      <p class="filters__count" aria-live="polite" data-filter-count></p>
+    </div>
+
+    {%- assign groups = "journal|Journal articles,conference|Conference presentations,software|Software,talk|Invited talks and seminars" | split: "," -%}
+    {%- for g in groups %}{% assign kv = g | split: "|" %}{% assign key = kv[0] %}
+    <section class="pub-group" data-pub-group="{{ key }}">
+      <h2 class="pub-group__h">{{ kv[1] }} <span class="muted">({{ P[key].size }})</span></h2>
+      <ol class="pub-list">
+        {%- for p in P[key] %}{% include pub-item.html pub=p type=key %}{% endfor %}
+      </ol>
+    </section>
+    {%- endfor %}
+    <p class="empty-state" data-filter-empty hidden>No entries match these filters.</p>
+  </div>
+</section>

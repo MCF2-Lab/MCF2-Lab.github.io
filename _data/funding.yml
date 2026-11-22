@@ -1,0 +1,19 @@
+# All research and education support, newest first.
+# The five featured projects are in projects.yml; this is the full record.
+- { year: 2026, sponsor: "NASA", title: "Physics-guided lunar plume ejecta sensing", role: "PI" }
+- { year: 2026, sponsor: "ACS Petroleum Research Fund (UNI)", title: "Ultrasonic manipulation of disperse phase dynamics in multiphase systems", role: "Lead PI" }
+- { year: 2026, sponsor: "National Science Foundation", title: "Multiscale multiphase mixing coupled with particle precipitation and transport", role: "PI" }
+- { year: 2026, sponsor: "Army Research Office (via Purdue University)", title: "Energy transport modulation for advanced resonant acoustic mixing", role: "Co-PI" }
+- { year: 2026, sponsor: "CSU Transportation Consortium (TRANSPORT)", title: "Brake ultrafine particle microphysics under regenerative braking of heavy-duty trucks", role: "PI" }
+- { year: 2026, sponsor: "CSU RSCA", title: "Turbulent reactive precipitation for energetic crystalline materials", role: "PI" }
+- { year: 2025, sponsor: "CSU RSCA", title: "Refined modeling of turbulent scalar mixing in multiphase systems", role: "PI" }
+- { year: 2024, sponsor: "California Space Grant Consortium (NASA)", title: "Expanding diversity in aerospace through high-performance computing: a dual-session scientific computing workshop series", role: "PI", kind: education }
+- { year: 2023, sponsor: "California Space Grant Consortium (NASA)", title: "Scientific computing workshop for STEM education", role: "PI", kind: education }
+- { year: 2023, sponsor: "CSU RSCA", title: "Micro-mixing in turbulent hydrogen premixed flames", role: "PI" }
+- { year: 2023, sponsor: "CSULB BUILD Program", title: "Scientific computing basics and needs for health-related research careers", role: "PI", kind: education }
+- { year: 2022, sponsor: "California Space Grant Consortium (NASA)", title: "Computational fluid dynamic modeling of mixing at the molecular level in microgravity", role: "PI" }
+- { year: 2022, sponsor: "Department of Defense", title: "Enhancing material testing and characterization by the Long Beach Engineering Center", role: "Co-PI" }
+- { year: 2022, sponsor: "CSU RSCA", title: "Development of closure models for magnetic nanoparticles in multiphase flows", role: "PI" }
+- { year: 2021, sponsor: "CSU Program for Education and Research in Biotechnology", title: "Computational framework for simulation of functional nanoparticles", role: "PI" }
+- { year: 2021, sponsor: "CSU Program for Education and Research in Biotechnology", title: "Numerical study of mixing and precipitation inside the confined impinging jet mixer", role: "PI" }
+- { year: 2021, sponsor: "CSULB Foundation", title: "COVID-19 research recovery microgrant", role: "PI" }

@@ -1,0 +1,127 @@
+---
+title: "Research"
+permalink: /research/
+eyebrow: "Research"
+lead: "Our research centers on predicting how disperse phases (particles, droplets and bubbles) and the continuous phase that carries them behave in polydisperse multiphase, turbulent and reacting flows, and on turning those predictions into open, verified computational tools."
+wide: true
+---
+<nav class="subnav" aria-label="On this page">
+  <div class="container">
+    <a href="#themes">Research themes</a>
+    <a href="#projects">Funded projects</a>
+    <a href="#gallery">Visualization gallery</a>
+    <a href="#software">Open-source software</a>
+    <a href="#support">Research support</a>
+  </div>
+</nav>
+
+<section class="section" id="themes">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2>Research themes</h2>
+      <p class="section-head__lead">Our projects use a common set of methods. Population balance equations describe the size of particles, droplets and bubbles, and transported probability density functions describe turbulent mixing. We solve both with quadrature-based moment methods in OpenFOAM, check the solvers against analytical solutions and compare the results with experimental data.</p>
+    </div>
+    <div class="theme-list">
+      {%- for t in site.data.themes %}
+      <article class="theme-row" id="{{ t.id }}" data-reveal>
+        <span class="theme-row__icon">{% include icon.html name=t.icon size=28 %}</span>
+        <div>
+          <h3>{{ t.title }}</h3>
+          <p>{{ t.body }}</p>
+          <ul class="tag-list">{% for k in t.keywords %}<li>{{ k }}</li>{% endfor %}</ul>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="projects">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2>Current projects</h2>
+      <p class="section-head__lead">Active research projects in the lab, with their sponsors and funding acknowledgments.</p>
+    </div>
+    <div class="project-jump" data-reveal>
+      {%- for pr in site.data.projects %}<a href="#{{ pr.id }}" style="--accent: {{ pr.accent }}"><span class="sponsor-pill">{{ pr.sponsor_short }}</span> {{ pr.short }}</a>{% endfor %}
+    </div>
+    <div class="project-stack">
+      {%- for pr in site.data.projects %}{% include project-feature.html project=pr %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2>Visualization gallery</h2>
+      <p class="section-head__lead">Select an image to enlarge it.</p>
+    </div>
+    <div class="gallery">
+      {%- for g in site.data.gallery %}
+      <a class="gallery__item{% if g.wide %} gallery__item--wide{% endif %}{% if g.contain %} gallery__item--contain{% endif %}" href="{{ g.src | relative_url }}" data-lightbox{% if g.video %} data-video="{{ g.video | relative_url }}"{% endif %} data-caption="{{ g.caption | escape }}" data-reveal>
+        <img src="{{ g.src | relative_url }}" alt="{{ g.alt | escape }}" loading="lazy" decoding="async"{% if g.position %} style="object-position: {{ g.position }}"{% endif %}>
+        {%- if g.video %}<span class="gallery__play">{% include icon.html name="play" size=22 %}</span>{% endif %}
+        <span class="gallery__cap">{{ g.title }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="software">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2>Open-source software</h2>
+      <p class="section-head__lead">Software developed in the lab and by its members, released under open-source licenses.</p>
+    </div>
+    <div class="card-grid card-grid--2x">
+      <article class="card" data-reveal>
+        <span class="card__icon">{% include icon.html name="droplet" size=24 %}</span>
+        <h3>Mirab</h3>
+        <p>A free, cross-platform desktop application for modeling water distribution and stormwater systems. Mirab puts EPA EPANET 2.2, OWA EPANET 2.3, EPANET-MSX, EPA SWMM 5.2 and the SWMM5+ finite-volume solver behind one interface, with live results, calibration, scenarios, GIS exchange, a command-line interface and a Python package.</p>
+        <p class="card__links"><a href="https://github.com/ehsanMa86/Mirab" target="_blank" rel="noopener">GitHub {% include icon.html name="external" size=14 %}</a> · <a href="https://ehsanma86.github.io/Mirab/" target="_blank" rel="noopener">Documentation {% include icon.html name="external" size=14 %}</a> · <a href="https://doi.org/10.5281/zenodo.23679047" target="_blank" rel="noopener">Zenodo {% include icon.html name="external" size=14 %}</a></p>
+      </article>
+      <article class="card" data-reveal>
+        <span class="card__icon">{% include icon.html name="flame" size=24 %}</span>
+        <h3>ceaToFoam</h3>
+        <p>Turns NASA CEA chamber thermochemistry into ready-to-run OpenFOAM cases for liquid-rocket thrust chambers and nozzles: a consistent frozen-flow thermophysical model, the nozzle contour and the mesh, for repeatable studies across propellants and operating points. Developed with Luke Cerda.</p>
+        <p class="card__links"><a href="https://github.com/MCF2-Lab/ceaToFoam" target="_blank" rel="noopener">GitHub {% include icon.html name="external" size=14 %}</a> · <a href="https://doi.org/10.5281/zenodo.24263668" target="_blank" rel="noopener">Zenodo {% include icon.html name="external" size=14 %}</a></p>
+      </article>
+      <article class="card" data-reveal>
+        <span class="card__icon">{% include icon.html name="wave" size=24 %}</span>
+        <h3>SWMM5+ engine</h3>
+        <p>A conservative finite-volume engine for EPA's Storm Water Management Model, written for parallel and high-performance computing during a postdoc at UT Austin.</p>
+        <p class="card__links"><a href="https://doi.org/10.5281/zenodo.3903439" target="_blank" rel="noopener">SWMMengine v1.0 {% include icon.html name="external" size=14 %}</a> · <a href="https://doi.org/10.1061/JOEEDU.EEENG-7680" target="_blank" rel="noopener">Paper {% include icon.html name="external" size=14 %}</a></p>
+      </article>
+      <article class="card" data-reveal>
+        <span class="card__icon">{% include icon.html name="layers" size=24 %}</span>
+        <h3>Lab solvers and meshing tools</h3>
+        <p>Solvers for acoustic population balances, conditional mixing, aerosol aging and plume–particle transport built on OpenFOAM, plus parametric blockMesh templates for airfoils and cylinders.</p>
+        <p class="card__links"><a href="{{ site.links.github }}" target="_blank" rel="noopener">MCF2 Lab on GitHub {% include icon.html name="external" size=14 %}</a> · <a href="https://doi.org/10.5281/zenodo.1226389" target="_blank" rel="noopener">NACA mesh {% include icon.html name="external" size=14 %}</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="support">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2>Grants since 2021</h2>
+      <p class="section-head__lead">We gratefully acknowledge the agencies and programs that have supported our research and education.</p>
+    </div>
+    <ol class="funding-list">
+      {%- assign by_year = site.data.funding | group_by: "year" -%}
+      {%- for y in by_year %}
+      <li class="funding-year" data-reveal>
+        <span class="funding-year__label">{{ y.name }}</span>
+        <ul>
+          {%- for f in y.items %}
+          <li><span class="funding__sponsor">{{ f.sponsor }}</span><span class="funding__title">{{ f.title }}</span><span class="chip{% if f.kind == 'education' %} chip--edu{% endif %}">{% if f.kind == 'education' %}Education · {% endif %}{{ f.role }}</span></li>
+          {%- endfor %}
+        </ul>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+---
+title: "Join Us"
+permalink: /join-us/
+eyebrow: "Join us"
+lead: "The MCF2 Lab welcomes motivated students interested in computational fluid dynamics, multiphase flows, turbulent mixing, reacting flows, scientific computing and their engineering applications."
+wide: true
+---
+<section class="section">
+  <div class="container">
+    <div class="split split--top">
+      <div class="prose" data-reveal>
+        <h2>What you would work on</h2>
+        <p>Students in the lab contribute to numerical modeling, code development, data analysis, visualization and validation studies, with applications in energy, aerospace, propulsion, disperse multiphase flows, mixing and reactive flows, environmental flows and industrial systems.</p>
+        <p>Current CSULB students should first look through our <a href="{{ '/research/' | relative_url }}">research areas</a> and <a href="{{ '/publications/' | relative_url }}">recent publications</a>. This helps identify topics that match your interests, background and long-term goals.</p>
+        <h3>Opportunities</h3>
+        <p>Depending on project needs and advising capacity, opportunities may include:</p>
+        <ul class="check-list check-list--2col">
+          <li>Bachelor's thesis projects</li>
+          <li>Master's thesis projects</li>
+          <li>Undergraduate research projects</li>
+          <li>Independent study</li>
+          <li>Volunteer research</li>
+          <li>Funded research assistant positions</li>
+          <li>Project-based collaborations</li>
+        </ul>
+        <h3>What we look for</h3>
+        <p>Successful students in the lab are curious, self-motivated, reliable and willing to learn. Experience with CFD, programming, fluid mechanics, thermodynamics, numerical methods or data analysis helps, but it is not required for every project.</p>
+        <p>Students should be ready to communicate regularly, document their work clearly, keep research files organized, and work carefully through technical challenges.</p>
+        <h3>Prospective students</h3>
+        <p>Prospective students should first apply to CSULB through the official admissions process. Admission decisions are made by the university, and the lab cannot help with admission processing or application review. After admission, you are welcome to contact Prof. Madadi following the guidelines on this page.</p>
+      </div>
+
+      <aside class="apply-card" data-reveal>
+        <p class="eyebrow">How to reach out</p>
+        <h2>Email Prof. Madadi</h2>
+        <p>Use a clear subject line that names the topic or opportunity. For general inquiries:</p>
+        <p class="subject-line"><span>Subject</span>Research Interest in MCF2 Lab</p>
+        <p>Please include:</p>
+        <ol class="num-list">
+          <li>Your name, major and degree program</li>
+          <li>Your expected graduation date</li>
+          <li>The research topic or lab area that interests you</li>
+          <li>How the topic connects to your academic or career goals</li>
+          <li>Relevant coursework, programming, research experience or technical skills</li>
+          <li>Your CV or résumé, if available</li>
+          <li>Your expected weekly availability</li>
+        </ol>
+        <a class="btn btn--primary btn--block" href="mailto:{{ site.pi.email }}?subject=Research%20Interest%20in%20MCF2%20Lab">{% include icon.html name="mail" size=18 %} {{ site.pi.email }}</a>
+        <p class="muted small">{{ site.pi.name }}, Ph.D. · {{ site.pi.title }} · {{ site.lab.university }}</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="openings">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">Current openings</p>
+      <h2>Open positions</h2>
+    </div>
+    {%- if site.data.openings and site.data.openings.size > 0 %}
+    <div class="card-grid card-grid--2">
+      {%- for o in site.data.openings %}
+      <article class="card" data-reveal>
+        <p class="eyebrow">{{ o.type }}</p>
+        <h3>{{ o.title }}</h3>
+        <p>{{ o.description }}</p>
+        <p class="subject-line"><span>Subject</span>{{ o.subject }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+    {%- else %}
+    <div class="empty-card" data-reveal>
+      <p>Specific funded or thesis-based opportunities will be posted here when available. When applying to a specific opening, read the position description carefully and use the exact subject line given in the announcement.</p>
+    </div>
+    {%- endif %}
+  </div>
+</section>

@@ -1,0 +1,201 @@
+# Funded projects shown on the Home and Research pages.
+# media.type: image | video. For video, give a poster image too.
+# Keep `ack` exactly as the award terms require.
+
+- id: nsf
+  logo: /assets/media/funders/nsf.png
+  sponsor_short: NSF
+  sponsor: "U.S. National Science Foundation"
+  program: "CBET · Award No. 2549901"
+  title: "Multiscale Multiphase Mixing Coupled with Particle Precipitation and Transport"
+  short: "Molecular mixing, chemistry and particle formation in nanoprecipitation reactors"
+  role: "Principal Investigator"
+  period: "2026 – 2028"
+  status: active
+  accent: "#2a78d6"
+  wide: true
+  media:
+    type: video
+    src: /assets/media/projects/nsf-cijr-reynolds.mp4
+    poster: /assets/media/projects/nsf-cijr-reynolds-poster.jpg
+    bg: "#47484c"
+    caption: "Vortical structures in a confined impinging-jet reactor at jet Reynolds numbers 600, 1500 and 2700."
+  thumb: /assets/media/projects/nsf-cijr-render.jpg
+  thumb_alt: "Path-traced streamlines inside a glass confined impinging-jet reactor, two opposed jets meeting in the chamber"
+  summary: >-
+    Molecular mixing controls how fast reactants meet, how supersaturation builds and
+    which particle sizes form in a reactor. This project
+    develops a bounded Langevin closure for the conditional scalar dissipation rate,
+    couples it to the chemistry through local Damköhler numbers computed from the
+    kinetic Jacobian, and carries the particle population with conditional
+    quadrature-based moment methods. The models are built on OpenFOAM and OpenQBMM and
+    tested in confined impinging-jet and multi-inlet vortex reactors, the devices
+    behind flash nanoprecipitation.
+  tags: [Turbulent mixing, Precipitation, Population balance, OpenFOAM]
+  ack: >-
+    This material is based upon work supported by the U.S. National Science Foundation
+    under Award No. 2549901.
+
+- id: acs-prf
+  logo: /assets/media/funders/acs.png
+  sponsor_short: ACS PRF
+  sponsor: "American Chemical Society Petroleum Research Fund"
+  program: "Undergraduate New Investigator · PRF# 70201-UNI9"
+  title: "Ultrasonic Manipulation of Disperse Phase Dynamics in Multiphase Systems"
+  short: "Moving, banding and aggregating droplets and particles with ultrasound"
+  role: "Principal Investigator"
+  period: "2026 – 2028"
+  status: active
+  accent: "#eb6834"
+  media:
+    type: image
+    src: /assets/media/projects/acs-acoustophoresis.jpg
+    bg: "#080e23"
+    alt: "Acoustic streaming rolls in blue with small particles trapped in them, and larger amber particles crossing the channel"
+    caption: "Acoustophoresis in a standing-wave channel: 5 µm particles (amber) are driven across the channel by the acoustic radiation force, while 0.5 µm particles (blue) follow the streaming rolls."
+  thumb: /assets/media/projects/acs-acoustophoresis.jpg
+  thumb_alt: "Acoustic streaming rolls with small and large particles"
+  summary: >-
+    Emulsions and suspensions appear at every stage of petroleum extraction, transport
+    and refining, and separating them costs energy. Ultrasound offers a contact-free way
+    to move, band and aggregate droplets and particles. We are building a
+    frequency-domain acoustics solver coupled to a buoyant carrier flow and a population
+    balance, so that radiation drift, Eckart and Rayleigh streaming, absorption heating,
+    settling, Brownian motion and collision-driven aggregation are resolved in one
+    framework. The project is built around undergraduate researchers, in line with the
+    goals of the ACS PRF Undergraduate New Investigator program.
+  tags: [Acoustofluidics, Aggregation, Population balance, Undergraduate research]
+  ack: >-
+    Acknowledgment is made to the donors of the American Chemical Society Petroleum
+    Research Fund for support of this research (PRF# 70201-UNI9).
+
+- id: transport
+  logo: /assets/media/funders/csu.png
+  sponsor_short: CSU TRANSPORT
+  sponsor: "California State University Transportation Consortium"
+  program: "CSULB TRANSPORT Seed Grant · funded by California Senate Bill 1"
+  title: "Brake Ultrafine Particle Microphysics under Regenerative Braking of Heavy-Duty Trucks"
+  short: "Aging of brake-wear ultrafine particles in heavy-duty truck plumes"
+  role: "Principal Investigator"
+  period: "2026"
+  status: active
+  accent: "#1baf7a"
+  wide: true
+  media:
+    type: image
+    src: /assets/media/projects/transport-truck-plume.jpg
+    alt: "Heavy-duty truck with a brake-wear particle plume under the trailer, colored from yellow to blue by particle age"
+    caption: "Brake-wear particle plume beneath a heavy-duty truck, colored by particle age (0 to 4 s)."
+  thumb: /assets/media/projects/transport-truck-plume.jpg
+  thumb_alt: "Truck with a brake-wear particle plume colored by particle age"
+  summary: >-
+    The move to zero-emission trucks removes tailpipe exhaust, which leaves non-exhaust
+    sources such as brake wear as a growing share of roadside particulate matter.
+    Communities along the I-710 corridor, next to the Ports of Long Beach and Los Angeles,
+    carry much of that burden. We couple a quadrature-based population balance for
+    brake-wear ultrafine particles to RANS simulations of the wheel and truck wake,
+    define a Damköhler number for particle aging, and predict the lung-deposited surface
+    area at the breathing zone.
+  tags: [Aerosols, Environmental health, Population balance, Transportation]
+  ack: >-
+    This work was supported by the California State University Transportation
+    Consortium through the CSULB TRANSPORT seed grant program, funded by Senate Bill 1.
+
+- id: nasa-mplan
+  logo: /assets/media/funders/nasa.png
+  sponsor_short: NASA
+  sponsor: "National Aeronautics and Space Administration"
+  program: "Minority University Research and Education Project (MUREP)"
+  title: "Physics-Guided Lunar Plume Ejecta Sensing"
+  short: "Inferring lunar ejecta from local sensor measurements during landing"
+  role: "Principal Investigator"
+  period: "2026"
+  status: active
+  accent: "#6250d6"
+  media:
+    type: image
+    src: /assets/media/projects/nasa-mplan-ejecta.png
+    alt: "Two panels: Mach number of a rocket plume impinging on the ground with sensor positions, and the number density of ejected grains near the surface"
+    caption: "(a) Mach number of a plume impinging on the surface, with the sensor rings; (b) density of ejected grains released from one source patch."
+    contain: true
+  thumb: /assets/media/projects/nasa-mplan-ejecta.png
+  thumb_alt: "Plume Mach number and ejected grain density near the surface"
+  summary: >-
+    Landing plumes erode lunar regolith and throw ejecta that hides the surface and
+    threatens landers, instruments and nearby assets. This project develops a
+    physics-guided sensing method that turns an obscured local measurement into the
+    source quantities needed for risk assessment. Particles of each size class are
+    tracked through precomputed plume gas fields to build transfer kernels from surface
+    source patches to virtual sensors, and a constrained inversion recovers ejecta number
+    and mass flux, characteristic size, velocity class and source region without
+    rerunning the CFD.
+  tags: [Plume–surface interaction, Lagrangian particles, Inverse problems, Lunar landing]
+  ack: >-
+    This work was supported by the National Aeronautics and Space Administration through
+    the Minority University Research and Education Project (MUREP).
+
+- id: ram
+  logo: /assets/media/funders/army.png
+  sponsor_short: ARO
+  sponsor: "U.S. Army Research Office"
+  program: "ARO-EMBR · subaward through Purdue University"
+  title: "Energy Transport Modulation for Advanced Resonant Acoustic Mixing"
+  short: "Energy transport in resonant acoustic mixers"
+  role: "Co-Principal Investigator, computational lead"
+  period: "2026 – 2027"
+  status: active
+  accent: "#d55181"
+  wide: true
+  media:
+    type: image
+    src: /assets/media/projects/ram-overview.jpg
+    alt: "Three panels: Faraday waves in a vibrated vessel, a liquid meniscus between plates, and a viscoelastic liquid climbing a rotating rod"
+    caption: "The physics ladder of our resonant acoustic mixing simulations: Faraday waves in a vibrated vessel, moving contact lines, and viscoelastic liquids."
+    contain: true
+  thumb: /assets/media/projects/ram-overview.jpg
+  thumb_alt: "Faraday waves, contact lines and viscoelastic liquid panels"
+  summary: >-
+    Resonant acoustic mixing shakes a sealed vessel at about 60 Hz and mixes viscous
+    pastes and energetic materials without blades. How the input energy is divided
+    between surface waves, viscous dissipation and heat determines mixing quality and
+    safety. Our simulations resolve the two-phase flow in the vibrating frame with a closed
+    energy budget, then add contact lines, viscoelastic rheology, particle populations and
+    slow heating. The work builds on our joint studies of energy distribution in resonant
+    acoustic mixing and of particle dynamics in Faraday-wave-driven flow.
+  tags: [Resonant acoustic mixing, Faraday waves, Viscoelastic flow, Energy budget]
+  related: [J16, J15]
+  ack: >-
+    This work was supported by the U.S. Army Research Office (ARO-EMBR) through a
+    subaward from Purdue University.
+
+- id: cea2foam
+  sponsor_short: "Honors research"
+  program: "Undergraduate honors research"
+  title: "ceaToFoam: Consistent Thermochemistry for CFD of Liquid-Rocket Thrust Chambers"
+  short: "Automated thermochemistry-to-CFD setup for liquid-rocket thrust chambers"
+  role: "Principal Investigator; with Luke Cerda (B.S. Honors, 2026)"
+  period: "2025 – 2026"
+  status: active
+  accent: "#e9a83a"
+  wide: true
+  media:
+    type: image
+    src: /assets/media/projects/cea2foam-flow-fields.png
+    alt: "Mach number and temperature fields in a liquid-rocket thrust chamber and nozzle, with labeled contour lines"
+    caption: "Mach number (a) and temperature (b) in a liquid-rocket thrust chamber and nozzle, from a case written by ceaToFoam (frozen sizing, inviscid)."
+    contain: true
+  thumb: /assets/media/projects/cea2foam-flow-fields.png
+  thumb_alt: "Mach number and temperature fields in a rocket nozzle"
+  summary: >-
+    Setting up a CFD case for a liquid-rocket thrust chamber means carrying chamber
+    thermochemistry, gas properties and nozzle geometry by hand from one tool to
+    another, which is slow and error-prone. ceaToFoam reads NASA CEA equilibrium
+    results for a chosen propellant pair and operating point, builds a consistent
+    frozen-flow thermophysical model and nozzle contour, and writes a ready-to-run
+    OpenFOAM case, so that parametric studies across propellants, mixture ratios and
+    chamber pressures become repeatable. The tool began as Luke Cerda's honors thesis
+    and is released as open-source software.
+  tags: [Rocket propulsion, Thermochemistry, Compressible flow, Open-source software]
+  links:
+    - { label: "ceaToFoam on GitHub", url: "https://github.com/MCF2-Lab/ceaToFoam" }
+    - { label: "Zenodo archive", url: "https://doi.org/10.5281/zenodo.24263668" }

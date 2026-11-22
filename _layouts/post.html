@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{%- assign docs = site[page.collection] | sort: "date" -%}
+{%- for d in docs -%}
+  {%- if d.url == page.url -%}
+    {%- assign idx = forloop.index0 -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign prev_i = idx | minus: 1 -%}
+{%- assign next_i = idx | plus: 1 -%}
+<article class="post">
+  <header class="page-hero page-hero--post">
+    <div class="container container--narrow">
+      <p class="eyebrow"><a href="{{ page.back_url | relative_url }}">{{ page.back_label }}</a> · {{ page.venue | default: "Update" }}</p>
+      <h1>{{ page.title }}</h1>
+      <p class="post-meta">{% include icon.html name="calendar" size=16 %} <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+    </div>
+  </header>
+  <div class="container container--narrow section">
+    <div class="prose post-body">
+{{ content }}
+    </div>
+    <nav class="post-nav" aria-label="More {{ page.collection }}">
+      {%- if prev_i >= 0 %}{% assign p = docs[prev_i] %}<a class="post-nav__link" href="{{ p.url | relative_url }}"><span>Earlier</span>{{ p.title }}</a>{% else %}<span></span>{% endif %}
+      {%- if next_i < docs.size %}{% assign n = docs[next_i] %}<a class="post-nav__link post-nav__link--next" href="{{ n.url | relative_url }}"><span>Later</span>{{ n.title }}</a>{% endif %}
+    </nav>
+  </div>
+</article>

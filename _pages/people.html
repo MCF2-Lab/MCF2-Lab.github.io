@@ -1,0 +1,93 @@
+---
+title: "People"
+permalink: /people/
+eyebrow: "People"
+lead: "Current members, alumni and visiting scholars of the MCF2 Lab."
+wide: true
+redirect_from:
+  - /team/
+---
+{%- assign T = site.data.team -%}
+{%- assign n_alumni = 0 -%}{%- assign n_thesis = 0 -%}
+{%- for g in T.alumni -%}{%- assign n_alumni = n_alumni | plus: g.people.size -%}{%- if g.group contains "thesis" and g.group != "Graduate students — non-thesis" -%}{%- assign n_thesis = n_thesis | plus: g.people.size -%}{%- endif -%}{%- endfor -%}
+
+<section class="section">
+  <div class="container">
+    <article class="pi-card" data-reveal>
+      <img src="{{ site.pi.photo | relative_url }}" alt="Portrait of {{ site.pi.name }}" width="180" height="190" loading="lazy">
+      <div>
+        <p class="eyebrow">Principal Investigator</p>
+        <h2>{{ site.pi.name }}, Ph.D.</h2>
+        <p class="muted">{{ site.pi.title }}</p>
+        <p>Ph.D., Iowa State University. Postdoctoral fellow, The University of Texas at Austin. Faculty at CSULB since 2020.</p>
+        <p class="pi-card__links">
+          <a class="btn btn--primary btn--sm" href="{{ '/pi/' | relative_url }}">Full profile {% include icon.html name="arrow" size=16 %}</a>
+          <a class="btn btn--outline btn--sm" href="mailto:{{ site.pi.email }}">{% include icon.html name="mail" size=16 %} {{ site.pi.email }}</a>
+        </p>
+      </div>
+    </article>
+
+    <div class="section-head" data-reveal>
+      <h2>Current members</h2>
+    </div>
+    <div class="member-grid">
+      {%- for m in T.current %}
+      {%- assign parts = m.name | split: " " -%}
+      <article class="member" data-reveal>
+        {%- if m.photo %}<img class="avatar" src="{{ m.photo | relative_url }}" alt="" loading="lazy">{% else %}<span class="avatar avatar--initials" aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>{% endif %}
+        <div>
+          <h3>{{ m.name }}</h3>
+          <p class="member__role">{{ m.role }}</p>
+          {%- if m.since %}<p class="member__meta">Since {{ m.since }}{% if m.until %} · {{ m.until }}{% endif %}</p>{% endif %}
+          {%- if m.topic %}<p class="member__topic">{{ m.topic }}</p>{% endif %}
+        </div>
+      </article>
+      {%- endfor %}
+      <a class="member member--join" href="{{ '/join-us/' | relative_url }}" data-reveal>
+        <span class="avatar avatar--plus" aria-hidden="true">+</span>
+        <div><h3>Open positions</h3><p class="member__role">How to join the lab</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow eyebrow--light">Alumni</p>
+      <h2>Alumni placements</h2>
+      <p class="section-head__lead">{{ n_alumni }} alumni and visiting scholars, {{ n_thesis }} with a thesis supervised in the lab. First positions after the lab include:</p>
+    </div>
+    <ul class="destinations" data-reveal>
+      {%- for d in T.destinations %}<li>{{ d }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filters" data-filter-root="alumni">
+      <div class="filters__row" role="group" aria-label="Alumni group">
+        <button type="button" class="filter-btn is-active" data-filter="group" data-value="all">All alumni</button>
+        {%- for g in T.alumni %}<button type="button" class="filter-btn" data-filter="group" data-value="{{ g.group | slugify }}">{{ g.group | replace: " — ", ": " }}</button>{% endfor %}
+      </div>
+    </div>
+    {%- for g in T.alumni %}
+    <section class="alumni-group" data-alumni-group="{{ g.group | slugify }}">
+      <h2 class="pub-group__h">{{ g.group }}</h2>
+      {%- if g.note %}<p class="muted">{{ g.note }}</p>{% endif %}
+      <div class="alumni-grid">
+        {%- for a in g.people %}
+        <article class="alum" data-reveal>
+          <p class="alum__year">{{ a.year }}</p>
+          <h3>{{ a.name }}</h3>
+          <p class="alum__degree">{{ a.degree }}</p>
+          {%- if a.thesis %}<p class="alum__thesis">{{ a.thesis }}</p>{% endif %}
+          {%- if a.next %}<p class="alum__next">{% include icon.html name="arrow" size=14 %} {{ a.next }}</p>{% endif %}
+        </article>
+        {%- endfor %}
+      </div>
+    </section>
+    {%- endfor %}
+  </div>
+</section>

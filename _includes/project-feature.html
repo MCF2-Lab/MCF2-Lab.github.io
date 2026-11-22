@@ -1,0 +1,53 @@
+{%- assign pr = include.project -%}
+<article class="project{% if pr.wide %} project--wide{% else %} project--split{% endif %}" id="{{ pr.id }}" style="--accent: {{ pr.accent }}{% if pr.media.bg %}; --media-bg: {{ pr.media.bg }}{% endif %}" data-reveal>
+  <div class="project__media{% if pr.media.contain %} project__media--contain{% endif %}">
+    {%- if pr.media.type == "video" %}
+    <div class="video-frame">
+      <video data-autoplay muted loop playsinline preload="metadata" poster="{{ pr.media.poster | relative_url }}" aria-label="{{ pr.media.caption | escape }}">
+        <source src="{{ pr.media.src | relative_url }}" type="video/mp4">
+      </video>
+      <button class="video-toggle" type="button" data-video-toggle aria-label="Pause animation">{% include icon.html name="pause" size=18 class="video-toggle__pause" %}{% include icon.html name="play" size=18 class="video-toggle__play" %}</button>
+    </div>
+    {%- else %}
+    <a href="{{ pr.media.src | relative_url }}" data-lightbox data-caption="{{ pr.media.caption | escape }}" class="zoomable">
+      <img src="{{ pr.media.src | relative_url }}" alt="{{ pr.media.alt | escape }}" loading="lazy" decoding="async">
+    </a>
+    {%- endif %}
+    <p class="project__caption">{{ pr.media.caption }}</p>
+  </div>
+  <div class="project__body">
+    <div class="project__main">
+      <p class="project__sponsor">{% if pr.logo %}<img class="project__logo" src="{{ pr.logo | relative_url }}" alt="" loading="lazy">{% endif %}<span class="sponsor-pill">{{ pr.sponsor_short }}</span>{% if pr.sponsor %} {{ pr.sponsor }}{% endif %}</p>
+      <h3 class="project__title">{{ pr.title }}</h3>
+      <dl class="project__meta">
+        <div><dt>Role</dt><dd>{{ pr.role }}</dd></div>
+        <div><dt>Period</dt><dd>{{ pr.period }}</dd></div>
+        <div><dt>Program</dt><dd>{{ pr.program }}</dd></div>
+      </dl>
+      <p class="project__summary">{{ pr.summary }}</p>
+    </div>
+    <div class="project__side">
+      {%- if pr.also %}<p class="project__also">{% include icon.html name="spark" size=16 %} {{ pr.also }}</p>{% endif %}
+      {%- if pr.related %}
+      <div class="project__related">
+        <p class="project__related-h">Related publications</p>
+        <ul>
+        {%- for rid in pr.related %}{% assign rp = site.data.publications.journal | where: "id", rid | first %}
+          <li><a href="https://doi.org/{{ rp.doi }}" target="_blank" rel="noopener">{{ rp.title }}</a> <span class="muted">— <em>{{ rp.venue }}</em> ({{ rp.year }})</span></li>
+        {%- endfor %}
+        </ul>
+      </div>
+      {%- endif %}
+      {%- if pr.links %}
+      <p class="project__links">{% for l in pr.links %}<a class="btn btn--outline btn--sm" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} {% include icon.html name="external" size=14 %}</a>{% endfor %}</p>
+      {%- endif %}
+      <ul class="tag-list">{% for t in pr.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+      {%- if pr.ack %}
+      <div class="ack">
+        <p class="ack__h">{% include icon.html name="landmark" size=16 %} Funding acknowledgment</p>
+        <p>{{ pr.ack }}</p>
+      </div>
+      {%- endif %}
+    </div>
+  </div>
+</article>

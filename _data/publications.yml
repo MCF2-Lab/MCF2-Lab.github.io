@@ -1,0 +1,359 @@
+# Publications, newest first within each type.
+# type: journal | conference | software | talk
+# In `authors`, mark lab students with {G} (graduate) or {UG} (undergraduate).
+# The PI's name is highlighted automatically. * marks the corresponding author.
+# topic: used by the filter chips on the Publications page.
+
+journal:
+  - id: J16
+    authors: "P. D. Silverstein, E. Madadi-Kandjani, J. Kalman*"
+    title: "Particle dynamics in Faraday wave-driven flow"
+    venue: "Physics of Fluids"
+    details: "38(7), 073349"
+    year: 2026
+    doi: "10.1063/5.0328969"
+    topic: acoustics
+  - id: J15
+    authors: "P. D. Silverstein, E. Madadi-Kandjani, J. Kalman*"
+    title: "Energy distribution during resonant acoustic mixing"
+    venue: "ACS Omega"
+    details: "10(37), 42323–42334"
+    year: 2025
+    doi: "10.1021/acsomega.5c02785"
+    topic: acoustics
+  - id: J14
+    authors: "B. Jahannia*, A. Amirany, E. Madadi-Kandjani, E. Heidari, H. Dalir"
+    title: "Multi-bit optical phase change memory for edge devices: device, architecture and design methodology"
+    venue: "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems"
+    details: ""
+    year: 2024
+    topic: other
+  - id: J13
+    authors: "B. R. Hodges*, S. Sharior, E. D. Tiernan, E. Jenkins, G. Riaño-Briceño, C. Davila-Hernandez, E. Madadi-Kandjani, C. W. Yu"
+    title: "Introducing SWMM5+"
+    venue: "Journal of Environmental Engineering"
+    details: "150(10), 02524003"
+    year: 2024
+    doi: "10.1061/JOEEDU.EEENG-7680"
+    topic: hydro
+  - id: J12
+    authors: "A. Ilgun, R. O. Fox, E. Madadi-Kandjani, A. Passalacqua*"
+    title: "A computational-fluid-dynamics model for particle-size evolution in the presence of turbulent mixing"
+    venue: "Chemical Engineering Science"
+    details: "279, 118961"
+    year: 2023
+    doi: "10.1016/j.ces.2023.118961"
+    topic: pbe
+  - id: J11
+    authors: "E. Madadi-Kandjani*, A. Passalacqua, R. O. Fox"
+    title: "Investigation of the mixing inside the confined impinging jet mixer using the Fokker–Planck mixing model"
+    venue: "Chemical Engineering Science"
+    details: "273, 118634"
+    year: 2023
+    doi: "10.1016/j.ces.2023.118634"
+    topic: mixing
+  - id: J10
+    authors: "A. Gonzalez{G}, J. Kalman, E. Madadi-Kandjani*"
+    title: "Computational study on the flame and extinction behavior of a high enthalpy air slab"
+    venue: "Physics of Fluids"
+    details: "34(6), 067121"
+    year: 2022
+    doi: "10.1063/5.0094404"
+    topic: reacting
+  - id: J09
+    authors: "A. Rostamian, E. Madadi-Kandjani, H. Dalir*, V. J. Sorger, R. T. Chen"
+    title: "Towards lab-on-chip ultrasensitive ethanol detection using photonic crystal waveguide operating in the mid-infrared"
+    venue: "Nanophotonics"
+    details: "10(6), 1675–1682"
+    year: 2021
+    doi: "10.1515/nanoph-2020-0576"
+    topic: other
+  - id: J08
+    authors: "M. Morales-Hernández*, M. B. Sharif, S. Gangrade, T. T. Dullo, S. C. Kao, A. Kalyanapu, S. K. Ghafoor, K. J. Evans, E. Madadi-Kandjani, B. R. Hodges"
+    title: "High-performance computing in water resources hydrodynamics"
+    venue: "Journal of Hydroinformatics"
+    details: "22(5), 1217–1235"
+    year: 2020
+    doi: "10.2166/hydro.2020.163"
+    topic: hydro
+  - id: J07
+    authors: "A. Passalacqua*, F. Laurent, E. Madadi-Kandjani, J. C. Heylmun, R. O. Fox"
+    title: "An open-source quadrature-based population balance solver for OpenFOAM"
+    venue: "Chemical Engineering Science"
+    details: "176, 306–318"
+    year: 2018
+    doi: "10.1016/j.ces.2017.10.043"
+    topic: pbe
+  - id: J06
+    authors: "E. Madadi-Kandjani, R. O. Fox, A. Passalacqua*"
+    title: "Application of the Fokker–Planck molecular mixing model to turbulent scalar mixing using moment methods"
+    venue: "Physics of Fluids"
+    details: "29, 065109"
+    year: 2017
+    doi: "10.1063/1.4989421"
+    topic: mixing
+  - id: J05
+    authors: "E. Madadi-Kandjani, A. Passalacqua*"
+    title: "An extended quadrature-based moment method with log-normal kernel density functions"
+    venue: "Chemical Engineering Science"
+    details: "131, 323–339"
+    year: 2015
+    doi: "10.1016/j.ces.2015.04.005"
+    topic: pbe
+  - id: J04
+    authors: "Q. Xiong*, E. Madadi-Kandjani, G. Lorenzini"
+    title: "A LBM–DEM solver for fast discrete particle simulation of particle–fluid flows"
+    venue: "Continuum Mechanics and Thermodynamics"
+    details: "26, 907–917"
+    year: 2014
+    doi: "10.1007/s00161-014-0351-z"
+    topic: multiphase
+  - id: J03
+    authors: "E. Madadi-Kandjani, Q. Xiong*"
+    title: "Validity of the spring-backed membrane model for bubble–wall interactions with compliant walls"
+    venue: "Computers & Fluids"
+    details: "96, 116–121"
+    year: 2014
+    doi: "10.1016/j.compfluid.2014.03.010"
+    topic: multiphase
+  - id: J02
+    authors: "M. T. Shervani-Tabar, M. Rezaei, E. Madadi-Kandjani*"
+    title: "Perfect plastic deformation of a circular thin metal plate due to pulsation of a vapor bubble"
+    venue: "International Journal of Mechanical Sciences"
+    details: "75, 345–356"
+    year: 2013
+    doi: "10.1016/j.ijmecsci.2013.08.001"
+    topic: multiphase
+  - id: J01
+    authors: "M. T. Shervani-Tabar, M. Rezaei, E. Madadi-Kandjani*"
+    title: "Perfect plastic deformation of a circular thin bronze plate due to the growth and collapse of a vapor bubble"
+    venue: "International Journal of Mechanical and Aerospace Engineering"
+    details: "6, 181–186"
+    year: 2013
+    topic: multiphase
+
+conference:
+  - id: C21
+    authors: "L. Cerda{UG}, E. Madadi-Kandjani"
+    title: "Automated thermochemistry-to-CFD coupling for liquid rocket propellant nozzle flows"
+    venue: "U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM 2026), Pasadena, CA"
+    year: 2026
+    doi: "10.13140/RG.2.2.19746.59843"
+    topic: reacting
+  - id: C20
+    authors: "H. Lenn{G}, E. Madadi-Kandjani"
+    title: "Extension of the Battelle two-curve method for fracture control in dense-phase CO₂ pipelines"
+    venue: "ASME Pressure Vessels & Piping Conference (PVP2026), Anaheim, CA"
+    year: 2026
+    topic: multiphase
+  - id: C19
+    authors: "M. Truong{G}, E. Madadi-Kandjani"
+    title: "DSMC performance frontiers: interplay of physics and computation"
+    venue: "APS Division of Fluid Dynamics Annual Meeting, Salt Lake City, UT"
+    year: 2024
+    topic: rarefied
+  - id: C18
+    authors: "J. Ye, H. Kang, S. Altaleb, H. Wang, E. Madadi-Kandjani, C. Patil, E. Heidari, N. Asadizanjani, H. Dalir"
+    title: "Optical data compression and hashing via 4f-based reconfigurable complex convolution module"
+    venue: "SPIE Optics + Photonics, San Diego, CA"
+    year: 2024
+    topic: other
+  - id: C17
+    authors: "J. Ye, H. Kang, H. Wang, S. Altaleb, E. Madadi-Kandjani, C. Patil, E. Heidari, N. Asadizanjani, H. Dalir"
+    title: "Orbital angular momentum beams multiplexing and demultiplexing using hybrid optical electronic neural network"
+    venue: "SPIE Optics + Photonics, San Diego, CA"
+    year: 2024
+    topic: other
+  - id: C16
+    authors: "J. Ye, H. Kang, S. Altaleb, H. Wang, E. Madadi-Kandjani, C. Patil, E. Heidari, N. Asadizanjani, H. Dalir"
+    title: "OAM beams multiplexing and demultiplexing using hybrid optical electronic neural network"
+    venue: "SPIE Optics + Photonics, San Diego, CA"
+    year: 2024
+    topic: other
+  - id: C15
+    authors: "H. Naina{UG}, E. Madadi-Kandjani"
+    title: "Investigation on turbulence model for multi-inlet vortex reactor transient simulation"
+    venue: "12th International Conference on Mathematical Modeling in Physical Sciences, Belgrade, Serbia"
+    year: 2023
+    topic: mixing
+  - id: C14
+    authors: "J. Heneghan{G}, A. Passalacqua, R. O. Fox, E. Madadi-Kandjani"
+    title: "Modeling of turbulent mixing inside a confined impinging jet mixer using Reynolds-averaged Navier–Stokes equations and the quadrature-based moment method"
+    venue: "APS Division of Fluid Dynamics Annual Meeting, Indianapolis, IN"
+    year: 2022
+    topic: mixing
+  - id: C13
+    authors: "H. Naina{UG}, A. Passalacqua, R. O. Fox, E. Madadi-Kandjani"
+    title: "The effects of different turbulence models on modelling swirling flow in a macro-scale multi-inlet vortex reactor using transient solver"
+    venue: "APS Division of Fluid Dynamics Annual Meeting, Indianapolis, IN"
+    year: 2022
+    topic: mixing
+  - id: C12
+    authors: "T. Nguyen{UG}, A. Passalacqua, E. Madadi-Kandjani"
+    title: "The effects of different RANS closures on modelling swirling flow in a macro-scale multi-inlet vortex reactor"
+    venue: "APS Division of Fluid Dynamics Annual Meeting, Phoenix, AZ"
+    year: 2021
+    topic: mixing
+  - id: C11
+    authors: "A. Gonzalez{G}, J. M. Kalman, E. Madadi-Kandjani"
+    title: "A computational study on flame extinction limits and behavior of a heated air slab burner"
+    venue: "APS Division of Fluid Dynamics Annual Meeting, Phoenix, AZ"
+    year: 2021
+    topic: reacting
+  - id: C10
+    authors: "B. R. Hodges, E. Madadi-Kandjani"
+    title: "Parallel code and cloud computing for water resources: building models for the next generation of computers"
+    venue: "Modeling Hydrodynamics for Water Resources, University of Zaragoza, Spain"
+    year: 2019
+    topic: hydro
+  - id: C09
+    authors: "B. R. Hodges, E. Madadi-Kandjani"
+    title: "An artificial compressibility method for slow transient modeling in water distribution piping"
+    venue: "World Environmental & Water Resources Congress, Pittsburgh, PA"
+    year: 2019
+    topic: hydro
+  - id: C08
+    authors: "B. R. Hodges, A. C. Rowney, E. Madadi-Kandjani"
+    title: "Outline of a new computational engine for SWMM"
+    venue: "International Conference on Water Management Modeling (ICWMM), Toronto, Canada"
+    year: 2019
+    topic: hydro
+  - id: C07
+    authors: "E. Madadi-Kandjani, L. Sela, K. Faust, F. Leite, B. R. Hodges"
+    title: "Extending the capabilities of EPANET user interface with the optimal design plugin tool"
+    venue: "WDSA/CCWI Joint Conference, Kingston, Ontario, Canada"
+    year: 2018
+    topic: hydro
+  - id: C06
+    authors: "E. Madadi-Kandjani, L. Sela, K. Faust, F. Leite, B. R. Hodges"
+    title: "Generating residential water demand profiles through EPANET plugin development"
+    venue: "International Congress on Environmental Modelling and Software, Fort Collins, CO"
+    year: 2018
+    topic: hydro
+  - id: C05
+    authors: "A. Passalacqua, E. Madadi-Kandjani, J. C. Heylmun, R. O. Fox"
+    title: "A conditional quadrature method of moments for turbulent mixing coupled to a population balance equation"
+    venue: "9th International Conference on Multiphase Flow (ICMF 2016), Florence, Italy"
+    year: 2016
+    topic: pbe
+  - id: C04
+    authors: "E. Madadi-Kandjani, A. Passalacqua"
+    title: "Solution of the Fokker–Planck equation using the extended quadrature method of moments"
+    venue: "AIChE Annual Meeting, Salt Lake City, UT"
+    year: 2015
+    topic: mixing
+  - id: C03
+    authors: "D. N. Williams, E. Madadi-Kandjani, A. Passalacqua, R. O. Fox"
+    title: "A quadrature-based CFD model for single-phase turbulent reacting flows"
+    venue: "AIChE Annual Meeting, Salt Lake City, UT"
+    year: 2015
+    topic: reacting
+  - id: C02
+    authors: "E. Madadi-Kandjani, A. Passalacqua"
+    title: "An extended quadrature method of moments with log-normal kernel density functions"
+    venue: "AIChE Annual Meeting, Atlanta, GA"
+    year: 2014
+    topic: pbe
+  - id: C01
+    authors: "M. T. Shervani-Tabar, M. Rezaei, E. Madadi-Kandjani"
+    title: "Perfect plastic deformation of a circular thin bronze plate due to the growth and collapse of a vapor bubble"
+    venue: "WASET International Conference, Dubai, United Arab Emirates"
+    year: 2012
+    topic: multiphase
+
+software:
+  - id: S7
+    authors: "L. Cerda{UG}, E. Madadi-Kandjani"
+    title: "ceaToFoam: NASA CEA chamber thermochemistry to OpenFOAM rocket-nozzle cases (v2.1.1)"
+    venue: "Zenodo"
+    year: 2026
+    doi: "10.5281/zenodo.24263668"
+    topic: reacting
+  - id: S6
+    authors: "E. Madadi-Kandjani"
+    title: "Mirab: water distribution and stormwater modeling with EPANET, SWMM and SWMM5+"
+    venue: "Zenodo"
+    year: 2026
+    doi: "10.5281/zenodo.23679047"
+    topic: hydro
+  - id: S5
+    authors: "E. Madadi-Kandjani, B. R. Hodges"
+    title: "SWMMengine: the first version of SWMM in Fortran (v1.0.0)"
+    venue: "Zenodo"
+    year: 2020
+    doi: "10.5281/zenodo.3903439"
+    topic: hydro
+  - id: S2
+    authors: "T. Zhai, P. Duda, M. Gray, X. Wei, C. Barr, P. Hummel, M. Tryby, E. Madadi-Kandjani, J. L. Kittle, J. Ortiz"
+    title: "SWMM-EPANET User Interface"
+    venue: "U.S. EPA, GitHub"
+    year: 2019
+    url: "https://github.com/USEPA/SWMM-EPANET_User_Interface"
+    topic: hydro
+  - id: S4
+    authors: "E. Madadi-Kandjani"
+    title: "NACA 4-digit airfoil mesh using blockMesh with m4 macro"
+    venue: "Zenodo"
+    year: 2018
+    doi: "10.5281/zenodo.1226389"
+    topic: other
+  - id: S3
+    authors: "E. Madadi-Kandjani"
+    title: "Cylinder mesh using blockMesh with m4 macro"
+    venue: "Software release"
+    year: 2016
+    topic: other
+
+talk:
+  - id: T7
+    authors: "E. Madadi-Kandjani"
+    title: "Quadrature-based models for turbulent scalar mixing"
+    venue: "University of California, Irvine"
+    year: 2022
+    topic: mixing
+  - id: T6
+    authors: "E. Madadi-Kandjani"
+    title: "Multi-scale modeling of polydisperse multiphase and turbulent mixing and reacting flows using quadrature-based moment methods"
+    venue: "California State University, Long Beach (virtual)"
+    year: 2020
+    topic: pbe
+  - id: T5
+    authors: "E. Madadi-Kandjani"
+    title: "Quadrature-based models for multiphase and turbulent scalars"
+    venue: "California State University, Sacramento (virtual)"
+    year: 2020
+    topic: pbe
+  - id: T4
+    authors: "E. Madadi-Kandjani"
+    title: "Quadrature-based models for multiphase and turbulent scalars"
+    venue: "Tennessee State University (virtual)"
+    year: 2020
+    topic: pbe
+  - id: T3
+    authors: "E. Madadi-Kandjani"
+    title: "OpenFOAM: an example of a successful open-source software"
+    venue: "EPANET Visioning Summit, Reston, VA"
+    year: 2018
+    topic: hydro
+  - id: T2
+    authors: "A. C. Rowney, E. Madadi-Kandjani"
+    title: "How can NCIMM help support EPANET"
+    venue: "EPANET Visioning Summit, Reston, VA"
+    year: 2018
+    topic: hydro
+  - id: T1
+    authors: "E. Madadi-Kandjani"
+    title: "Application of the Fokker–Planck molecular mixing model to turbulent scalar mixing using moment methods"
+    venue: "Department of Mechanical Engineering Seminar Series, Iowa State University"
+    year: 2017
+    topic: mixing
+
+topics:
+  pbe: "Population balance & QBMM"
+  mixing: "Turbulent mixing"
+  reacting: "Reacting flows & propulsion"
+  acoustics: "Acoustics & resonant mixing"
+  multiphase: "Bubbles, particles & multiphase"
+  rarefied: "Rarefied gases"
+  hydro: "Water resources & HPC"
+  other: "Collaborations"

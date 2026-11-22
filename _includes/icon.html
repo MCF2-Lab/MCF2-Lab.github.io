@@ -1,0 +1,49 @@
+{%- comment -%} Inline stroke icon. Usage: {% include icon.html name="mail" %} {%- endcomment -%}
+{%- assign n = include.name -%}
+<svg class="icon{% if include.class %} {{ include.class }}{% endif %}" viewBox="0 0 24 24" width="{{ include.size | default: 20 }}" height="{{ include.size | default: 20 }}" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+{%- case n -%}
+{%- when "arrow" -%}<path d="M5 12h14M13 6l6 6-6 6"/>
+{%- when "external" -%}<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>
+{%- when "mail" -%}<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+{%- when "pin" -%}<path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>
+{%- when "github" -%}<path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/>
+{%- when "cap" -%}<path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c3 2 9 2 12 0v-5M22 9v6"/>
+{%- when "id" -%}<circle cx="12" cy="12" r="9"/><path d="M9 8v8M12.5 8H14a4 4 0 0 1 0 8h-1.5z"/>
+{%- when "doc" -%}<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>
+{%- when "play" -%}<path d="M7 4.5v15l13-7.5z"/>
+{%- when "pause" -%}<path d="M8 5v14M16 5v14"/>
+{%- when "users" -%}<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/>
+{%- when "layers" -%}<path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/>
+{%- when "message" -%}<path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/>
+{%- when "coffee" -%}<path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 9h1.5a2.5 2.5 0 0 1 0 5H17M7 2.5v2.5M10.5 2.5v2.5M14 2.5v2.5"/>
+{%- when "clock" -%}<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+{%- when "board" -%}<rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"/>
+{%- when "award" -%}<circle cx="12" cy="9" r="6"/><path d="m8.5 14 -1.5 7 5-2.5 5 2.5-1.5-7"/>
+{%- when "book" -%}<path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H20v15H5.5A1.5 1.5 0 0 0 4 19.5z"/><path d="M4 19.5A1.5 1.5 0 0 0 5.5 21H20"/>
+{%- when "cpu" -%}<rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/>
+{%- when "server" -%}<rect x="3" y="3" width="18" height="7" rx="1.5"/><rect x="3" y="14" width="18" height="7" rx="1.5"/><path d="M7 6.5h.01M7 17.5h.01"/>
+{%- when "cloud" -%}<path d="M7 18a4.5 4.5 0 0 1-.6-9 6 6 0 0 1 11.6 1.5A3.75 3.75 0 0 1 17.5 18z"/>
+{%- when "search" -%}<circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/>
+{%- when "menu" -%}<path d="M4 7h16M4 12h16M4 17h16"/>
+{%- when "close" -%}<path d="M6 6l12 12M18 6 6 18"/>
+{%- when "calendar" -%}<rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>
+{%- when "landmark" -%}<path d="M3 21h18M5 21V10M19 21V10M9.5 21V10M14.5 21V10M2.5 10 12 3.5l9.5 6.5z"/>
+{%- when "globe" -%}<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>
+{%- when "quote" -%}<path d="M10 6.5C6.6 7.4 4.5 10 4.5 13.6V18H10v-5.5H7.2c.2-2 1.3-3.4 2.8-4.1zM19.5 6.5c-3.4.9-5.5 3.5-5.5 7.1V18h5.5v-5.5h-2.8c.2-2 1.3-3.4 2.8-4.1z" fill="currentColor" stroke="none"/>
+{%- when "thermo" -%}<path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0z"/><path d="M12 11v6"/>
+{%- when "heat" -%}<path d="M12 21c-3.9 0-6.5-2.7-6.5-6.2 0-3.5 2.6-5.5 3.7-8.8 2.4 1.4 3 3.4 3 5 1-.8 1.6-2 1.6-3.4 2.5 1.6 4.7 4.3 4.7 7.2 0 3.5-2.6 6.2-6.5 6.2z"/>
+{%- when "shock" -%}<path d="M3 8h9a3 3 0 1 0-3-3M3 16h13a3 3 0 1 1-3 3M3 12h17"/>
+{%- when "flow" -%}<path d="M2 8c2.5-2 4.5-2 7 0s4.5 2 7 0 4.5-2 6 0M2 16c2.5-2 4.5-2 7 0s4.5 2 7 0 4.5-2 6 0"/>
+{%- when "leaf" -%}<path d="M5 19c-.5-7 3.5-13 15-14-1 11.5-7 15.5-14 15z"/><path d="M5 19c3-4 6-6.5 10-8.5"/>
+{%- when "droplet" -%}<path d="M12 3s6.5 7 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 10 12 3 12 3z"/>
+{%- when "spark" -%}<path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/>
+{%- when "wave" -%}<path d="M2 12h2l2-6 3 12 3-15 3 15 3-12 2 6h2"/>
+{%- when "flame" -%}<path d="M12 21c-3.9 0-6.5-2.7-6.5-6.2 0-3.5 2.6-5.5 3.7-8.8 2.4 1.4 3 3.4 3 5 1-.8 1.6-2 1.6-3.4 2.5 1.6 4.7 4.3 4.7 7.2 0 3.5-2.6 6.2-6.5 6.2z"/>
+{%- when "orbit" -%}<circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(-30 12 12)"/>
+{%- when "wind" -%}<path d="M3 8h10a3 3 0 1 0-3-3M3 16h14a3 3 0 1 1-3 3M3 12h8"/>
+{%- when "dots" -%}<circle cx="7" cy="7" r="2"/><circle cx="16" cy="9" r="3"/><circle cx="9" cy="16" r="3.5"/><circle cx="17.5" cy="17.5" r="1.5"/>
+{%- when "rss" -%}<path d="M5 11a8 8 0 0 1 8 8M5 5a14 14 0 0 1 14 14"/><circle cx="6" cy="18" r="1.4" fill="currentColor"/>
+{%- when "chevron" -%}<path d="m9 6 6 6-6 6"/>
+{%- else -%}<circle cx="12" cy="12" r="9"/>
+{%- endcase -%}
+</svg>

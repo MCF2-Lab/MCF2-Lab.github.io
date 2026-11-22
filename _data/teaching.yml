@@ -1,0 +1,93 @@
+# Courses taught at CSULB. Ratings are student evaluations on a 6-point scale.
+courses:
+  - code: "MAE 330"
+    sections: 22
+    mean: "5.41"
+    name: "Engineering Thermodynamics"
+    level: "Undergraduate core"
+    icon: thermo
+    description: >-
+      Energy, entropy and the laws that govern every engine, power plant and
+      refrigerator: properties of pure substances, first- and second-law analysis of
+      closed systems and control volumes, and power and refrigeration cycles.
+  - code: "MAE 431"
+    sections: 9
+    mean: "5.63"
+    name: "Heat Transfer Systems Design"
+    level: "Undergraduate design"
+    icon: heat
+    description: >-
+      Conduction, convection, radiation and heat exchangers applied to the design of
+      thermal systems, from electronics cooling to HVAC equipment.
+  - code: "MAE 533"
+    sections: 2
+    mean: "5.94"
+    name: "Gas Dynamics"
+    level: "Graduate"
+    icon: shock
+    description: >-
+      Compressible flow: isentropic flow, normal and oblique shocks, expansion waves,
+      nozzles and diffusers, and flow with friction and heat addition, with
+      applications to propulsion and high-speed flight.
+  - code: "MAE 537"
+    sections: 1
+    mean: "5.80"
+    name: "Advanced Fluid Dynamics I"
+    level: "Graduate"
+    icon: flow
+    description: >-
+      The governing equations of fluid motion and their consequences: kinematics,
+      vorticity dynamics, exact viscous solutions and boundary layers.
+  - code: "ENGR 302"
+    sections: 1
+    mean: "5.44"
+    name: "Energy and Environment"
+    level: "Upper division"
+    icon: leaf
+    description: >-
+      How energy is produced, converted and used, and what that costs the
+      environment.
+
+# Student evaluations, totals only (6-point scale), Fall 2020 to Spring 2026.
+evaluations:
+  sections: 35
+  mean: "5.51"
+
+# Teaching philosophy shown in the blue box on the Teaching page
+philosophy:
+  text: "When students see a friend at the front of the room, they learn. Every student in my class is a future entrepreneur, business leader, engineer or influencer, and I teach with that future in mind."
+  who: "Ehsan Madadi, teaching philosophy"
+
+accessibility:
+  - title: "Quality Matters course design"
+    text: >-
+      Course design follows the Quality Matters rubric: measurable objectives aligned
+      with assessments, a consistent structure that students can navigate, and
+      materials designed with accessibility in mind.
+  - title: "Transparent assignments"
+    text: >-
+      Following the TILT framework, each major assignment states its purpose, the task
+      and the criteria for success.
+  - title: "Equity-minded design"
+    text: >-
+      Course policies and examples are reviewed for equity and inclusion, drawing on
+      CSULB training in equity-minded course design and in working with students in
+      vulnerable situations.
+  - title: "Flexible modes of learning"
+    text: >-
+      Training in online, HyFlex and alternative modes of instruction supports students
+      who attend on campus or remotely.
+
+development:
+  - { year: 2026, title: "Applying the QM Rubric (APPQMR)", org: "Quality Matters" }
+  - { year: 2025, title: "Improving Your Online Course (IYOC)", org: "Quality Matters" }
+  - { year: 2025, title: "Faculty Online Readiness Program; Online Instructional Techniques; Online Course Design Best Practices; Introduction to Online Teaching and Learning", org: "CSULB" }
+  - { year: 2022, title: "CSU Certificate Program in Student Success Analytics", org: "California State University" }
+  - { year: 2021, title: "Creating Classroom Community & Handling Difficult Moments; Equity-Mindedness in Overall Course Design; Introduction to Pedagogical Principles and Teaching Online", org: "CSULB" }
+  - { year: 2021, title: "HyFlex Pedagogical Methods; Using Technology in a HyFlex Classroom; Equity, Access, and Inclusivity in the Classroom; Beach Mentor Program", org: "CSULB" }
+  - { year: 2020, title: "Online Learning Studio and Alternative Modes of Instruction; TILT Higher Ed: Assignment Redesign for Equity and Inclusion; Principles of Course Alignment; Assessing What Students Are Learning", org: "CSULB" }
+  - { year: 2016, title: "Teaching Excellence Award", org: "Iowa State University" }
+
+earlier:
+  - { place: "Iowa State University", role: "Teaching Assistant", courses: "Fluid Flow and Fluid Flow Laboratory (ME 335/335L), Engineering Thermodynamics (ME 231)", years: "2014 – 2017" }
+  - { place: "University of Tabriz", role: "Teaching Assistant", courses: "Heat Transfer, Machine Design, Compressible Fluid Flow", years: "2010 – 2011" }

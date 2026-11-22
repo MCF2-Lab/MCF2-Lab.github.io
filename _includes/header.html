@@ -1,0 +1,29 @@
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header{% if page.hero %} site-header--overlay{% endif %}" data-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="MCF2 Lab home">
+      <img class="brand__mark" src="{{ '/images/logo-mark.svg' | relative_url }}" alt="" width="36" height="36">
+      <span class="brand__text">
+        <span class="brand__name">MCF<sup>2</sup> Lab</span>
+        <span class="brand__sub">Multiphase &amp; Complex Fluids Flow</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="visually-hidden">Menu</span>
+      {% include icon.html name="menu" size=24 class="nav-toggle__open" %}
+      {% include icon.html name="close" size=24 class="nav-toggle__close" %}
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        {%- for item in site.data.navigation %}
+        {%- assign active = false -%}
+        {%- if page.url contains item.url -%}{%- assign active = true -%}{%- endif -%}
+        {%- if item.url == "/news/" and page.collection == "news" -%}{%- assign active = true -%}{%- endif -%}
+        {%- if item.url == "/outreach/" and page.collection == "outreach" -%}{%- assign active = true -%}{%- endif -%}
+        {%- if item.url == "/people/" and page.url == "/pi/" -%}{%- assign active = true -%}{%- endif %}
+        <li><a href="{{ item.url | relative_url }}" class="{% if item.button %}nav-cta{% endif %}{% if active %} is-active{% endif %}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

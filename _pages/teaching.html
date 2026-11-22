@@ -1,0 +1,116 @@
+---
+title: "Teaching"
+permalink: /teaching/
+eyebrow: "Teaching"
+lead: "When instructors are excited about teaching and learning, students get excited about learning. Prof. Madadi teaches the thermal-fluid core of mechanical and aerospace engineering at CSULB, with classrooms designed so that every student can reach the material and take part."
+wide: true
+---
+{%- assign TD = site.data.teaching -%}
+
+<nav class="subnav" aria-label="On this page">
+  <div class="container">
+    <a href="#approach">Approach</a>
+    <a href="#accessibility">Accessibility</a>
+    <a href="#courses">Courses</a>
+    <a href="#evaluations">Student evaluations</a>
+    <a href="#beyond">Workshops</a>
+  </div>
+</nav>
+
+<section class="section" id="approach">
+  <div class="container">
+    <div class="split" data-reveal>
+      <div>
+        <h2>Teaching approach</h2>
+        <p class="section-head__lead">Lectures combine derivations on the board with short videos, interactive displays and problems solved by the class. The course is adjusted during the term based on student feedback.</p>
+      </div>
+      <blockquote class="pull-quote">
+        {% include icon.html name="quote" size=28 %}
+        <p>{{ TD.philosophy.text }}</p>
+        <cite>{{ TD.philosophy.who }}</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="accessibility">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2>Accessibility and inclusion</h2>
+      <p class="section-head__lead">Course design draws on training through Quality Matters and CSULB faculty development programs.</p>
+    </div>
+    <div class="access-grid">
+      {%- for a in TD.accessibility %}
+      <article class="access" data-reveal>
+        <span class="access__n">{{ forloop.index | prepend: "0" }}</span>
+        <h3>{{ a.title }}</h3>
+        <p>{{ a.text }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="courses">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2>Courses taught at CSULB</h2>
+    </div>
+    <div class="course-grid">
+      {%- for c in TD.courses %}
+      <article class="course" data-reveal>
+        <header class="course__head">
+          <span class="course__icon">{% include icon.html name=c.icon size=26 %}</span>
+          <div>
+            <p class="course__code">{{ c.code }} · {{ c.level }}</p>
+            <h3>{{ c.name }}</h3>
+          </div>
+        </header>
+        <p>{{ c.description }}</p>
+        <dl class="course__facts">
+          <div><dt>Sections taught</dt><dd>{{ c.sections }}</dd></div>
+          <div><dt>Mean rating</dt><dd>{{ c.mean }} <span class="muted">/ 6</span></dd></div>
+        </dl>
+      </article>
+      {%- endfor %}
+    </div>
+    <p class="muted small" data-reveal>Earlier teaching: {% for e in TD.earlier %}{{ e.role }} at {{ e.place }} ({{ e.years }}): {{ e.courses }}{% unless forloop.last %}; {% endunless %}{% endfor %}.</p>
+  </div>
+</section>
+
+<section class="section section--alt" id="evaluations">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2>Student evaluations</h2>
+    </div>
+    <div class="pub-summary pub-summary--2">
+      <div class="stat stat--light" data-reveal><span class="stat__value">{{ TD.evaluations.mean }}</span><span class="stat__label">Mean student rating out of 6, all sections</span></div>
+      <div class="stat stat--light" data-reveal><span class="stat__value" data-count="{{ TD.evaluations.sections }}">{{ TD.evaluations.sections }}</span><span class="stat__label">Course sections taught since 2020</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="beyond">
+  <div class="container">
+    <div class="split split--top">
+      <div data-reveal>
+        <h2>Scientific computing workshops</h2>
+        <p>With support from the California Space Grant Consortium and the CSULB BUILD program, the lab runs hands-on workshops in Python, Git, Linux and high-performance computing that are open to undergraduate and graduate students across campus, led by Prof. Madadi with student instructors.</p>
+        <ul class="check-list">
+          <li>Scientific Computing Workshop for STEM Education, California Space Grant Consortium (2023)</li>
+          <li>Scientific Computing Basics and Needs for Health-Related Research Careers, CSULB BUILD (2023 – 2024)</li>
+          <li>Expanding Diversity in Aerospace through High-Performance Computing: a dual-session workshop series, California Space Grant Consortium (2024 – 2025)</li>
+        </ul>
+        <p>Research students meet weekly with Prof. Madadi and work in a shared team channel. Current students and alumni are listed on the <a href="{{ '/people/' | relative_url }}">People</a> page.</p>
+      </div>
+      <div data-reveal>
+        <h2>Professional development</h2>
+        <ol class="mini-timeline">
+          {%- for d in TD.development %}
+          <li><span class="mini-timeline__year">{{ d.year }}</span><div><strong>{{ d.title }}</strong><br><span class="muted">{{ d.org }}</span></div></li>
+          {%- endfor %}
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>

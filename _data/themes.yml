@@ -1,0 +1,80 @@
+# Research themes (Home and Research pages)
+- id: population-balance
+  icon: dots
+  title: "Population balance modeling"
+  short: "Predicting how particle, droplet and bubble size distributions change in a flow."
+  body: >-
+    Particle size is one of the most important properties of a particulate product. It
+    affects how powders flow and compact, how suspensions and emulsions behave, and how a
+    drug dissolves. Size distributions change through nucleation, growth, aggregation and
+    breakage. We predict these changes with population balance equations solved by
+    quadrature-based moment methods (QBMM), including the extended quadrature method of
+    moments with log-normal kernels and conditional moment methods that couple a
+    population balance to turbulent mixing.
+  keywords: [QBMM, EQMOM, aggregation and breakage, precipitation]
+
+- id: turbulent-mixing
+  icon: flow
+  title: "Turbulent mixing"
+  short: "Modeling the interaction between turbulent advection and molecular diffusion."
+  body: >-
+    The rate of a fast chemical reaction depends on how quickly turbulence and molecular
+    diffusion bring the reactants together. Direct numerical simulation resolves both
+    processes, but it has to reach the Kolmogorov and Batchelor scales and is too
+    expensive for practical devices. We develop transported probability density function
+    closures for RANS and LES, including the Fokker–Planck molecular mixing model solved
+    with moment methods and Langevin models for the conditional scalar dissipation rate.
+    We test them in confined impinging-jet and multi-inlet vortex reactors.
+  keywords: [PDF methods, Fokker–Planck model, scalar dissipation, micromixing, RANS and LES]
+
+- id: reacting-flows
+  icon: flame
+  title: "Reacting flows and propulsion"
+  short: "Combustion, rocket propulsion and reactive precipitation."
+  body: >-
+    We study chemical kinetics in turbulent flows relevant to energy and propulsion:
+    flame extinction over high-enthalpy slab burners for solid-fuel ramjets, micromixing
+    in turbulent hydrogen premixed flames, coupling of NASA CEA thermochemistry to
+    OpenFOAM for liquid-rocket thrust chambers, and flash nanoprecipitation, in which
+    nanoparticles form within milliseconds of mixing.
+  keywords: [Combustion, hydrogen, rocket nozzles, flash nanoprecipitation, Damköhler number]
+
+- id: acoustics
+  icon: wave
+  title: "Acoustofluidics and resonant mixing"
+  short: "Acoustic forces on particles and vibration-driven mixing."
+  body: >-
+    Ultrasound moves particles and droplets through acoustic radiation forces and
+    streaming, and low-frequency resonant vibration can mix highly viscous materials
+    without an impeller. We model acoustic radiation forces, Eckart and Rayleigh
+    streaming and their effect on aggregation, and the two-phase free-surface flow in
+    resonant acoustic mixers, where Faraday waves, contact lines and viscoelastic
+    rheology determine how the input energy is divided between mixing, dissipation and
+    heating.
+  keywords: [Acoustophoresis, acoustic streaming, Faraday waves, resonant acoustic mixing]
+
+- id: rarefied-space
+  icon: orbit
+  title: "Rarefied gases and space flows"
+  short: "Kinetic models for low-pressure gas flows and plume–surface interaction."
+  body: >-
+    At low pressure the continuum assumption fails and gas flows must be described
+    kinetically. We study the efficiency and velocity distributions of the direct
+    simulation Monte Carlo method and develop moment-based models that are faster than
+    Monte Carlo at similar accuracy. With HEPIA in Geneva we simulate supersonic and
+    transonic flow around re-entry capsules and the flush air data systems that measure
+    it, and for NASA we model how landing plumes eject lunar regolith.
+  keywords: [DSMC, kinetic theory, re-entry, flush air data systems, plume–surface interaction]
+
+- id: environment-energy
+  icon: leaf
+  title: "Aerosols, energy and the built environment"
+  short: "Ultrafine particles, building ventilation and hydrogen energy."
+  body: >-
+    We also apply these methods to environmental and energy problems in Southern
+    California: the aging of brake-wear ultrafine particles in heavy-duty truck plumes
+    on the I-710 corridor, the performance of hybrid attic ventilation and HVAC systems,
+    and fuel-cell tri-generation. We collaborate with ARCHES H2 and the South Coast Air
+    Quality Management District on hydrogen and clean-energy initiatives and on workforce
+    development for the energy transition.
+  keywords: [Ultrafine particles, exposure, HVAC, hydrogen, fuel cells]

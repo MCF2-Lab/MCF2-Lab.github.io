@@ -1,0 +1,142 @@
+---
+layout: default
+permalink: /
+title: "Multiphase and Complex Fluids Flow Lab"
+hero: true
+body_class: home
+redirect_from:
+  - /about/
+  - /about.html
+---
+{%- assign pubs = site.data.publications -%}
+{%- assign n_students = site.data.team.current.size -%}
+{%- for g in site.data.team.alumni -%}{%- assign n_students = n_students | plus: g.people.size -%}{%- endfor -%}
+
+<section class="hero" aria-label="Introduction">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__grid">
+    <div class="hero__text">
+      <p class="eyebrow eyebrow--light">California State University, Long Beach · Mechanical &amp; Aerospace Engineering</p>
+      <h1>Multiphase and Complex Fluids Flow Lab</h1>
+      <p class="hero__lead">We build accurate and tractable computational models for polydisperse multiphase flows, turbulent mixing and reacting flows, from nanoparticle reactors and ultrasonic separators to rocket nozzles, truck brake-wear plumes and lunar landing plumes.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="{{ '/research/' | relative_url }}">Explore our research {% include icon.html name="arrow" size=18 %}</a>
+        <a class="btn btn--ghost" href="{{ '/publications/' | relative_url }}">Publications</a>
+      </div>
+    </div>
+    <div class="hero__show" data-slideshow>
+      {%- assign slides = "nsf,transport,acs-prf,ram" | split: "," -%}
+      {%- for sid in slides %}{% assign pr = site.data.projects | where: "id", sid | first %}
+      <figure class="slide{% if forloop.first %} is-active{% endif %}{% if pr.media.contain %} slide--contain{% endif %}{% if pr.thumb_fit %} slide--fit{% endif %}"{% if pr.thumb_fit %} style="background: {{ pr.media.bg }}"{% endif %} data-slide>
+        <img src="{{ pr.thumb | relative_url }}" alt="{{ pr.thumb_alt | escape }}" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async">
+        <figcaption><span class="sponsor-pill sponsor-pill--light">{{ pr.sponsor_short }}</span> {{ pr.short }}</figcaption>
+      </figure>
+      {%- endfor %}
+      <div class="slide-dots" role="tablist" aria-label="Featured visualizations">
+        {%- for sid in slides %}<button type="button" class="slide-dot{% if forloop.first %} is-active{% endif %}" data-slide-dot aria-label="Show visualization {{ forloop.index }}"></button>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="The lab in numbers">
+  <div class="container stats__grid">
+    <div class="stat" data-reveal><span class="stat__value" data-count="{{ pubs.journal.size }}">{{ pubs.journal.size }}</span><span class="stat__label">Journal articles</span></div>
+    <div class="stat" data-reveal><span class="stat__value" data-count="{{ pubs.conference.size }}">{{ pubs.conference.size }}</span><span class="stat__label">Conference presentations</span></div>
+    <div class="stat" data-reveal><span class="stat__value" data-count="{{ site.data.projects.size }}">{{ site.data.projects.size }}</span><span class="stat__label">Active research projects</span></div>
+    <div class="stat" data-reveal><span class="stat__value" data-count="{{ n_students }}">{{ n_students }}</span><span class="stat__label">Students mentored</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2>Research areas</h2>
+      <p class="section-head__lead">We combine theory, numerical methods and simulation to predict how particles, droplets and bubbles move, mix, react and change size in turbulent flows.</p>
+    </div>
+    <div class="theme-grid">
+      {%- for t in site.data.themes %}
+      <a class="theme-card" href="{{ '/research/' | relative_url }}#{{ t.id }}" data-reveal style="--d: {{ forloop.index0 | times: 60 }}ms">
+        <span class="theme-card__icon">{% include icon.html name=t.icon size=26 %}</span>
+        <h3>{{ t.title }}</h3>
+        <p>{{ t.short }}</p>
+        <span class="theme-card__more">Learn more {% include icon.html name="arrow" size=16 %}</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head section-head--row" data-reveal>
+      <div>
+        <h2>Current projects</h2>
+      </div>
+      <a class="link-arrow" href="{{ '/research/' | relative_url }}#projects">All project details {% include icon.html name="arrow" size=16 %}</a>
+    </div>
+    <div class="project-cards">
+      {%- for pr in site.data.projects %}
+      <a class="project-card" href="{{ '/research/' | relative_url }}#{{ pr.id }}" style="--accent: {{ pr.accent }}; --d: {{ forloop.index0 | times: 70 }}ms" data-reveal>
+        <div class="project-card__img{% if pr.media.contain %} project-card__img--contain{% endif %}"><img src="{{ pr.thumb | relative_url }}" alt="{{ pr.thumb_alt | escape }}" loading="lazy" decoding="async"></div>
+        <div class="project-card__body">
+          <p class="project-card__sponsor">{{ pr.sponsor_short }} · {{ pr.period }}</p>
+          <h3>{{ pr.title }}</h3>
+          <p>{{ pr.short }}</p>
+        </div>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--row" data-reveal>
+      <div>
+        <h2>News</h2>
+      </div>
+      <a class="link-arrow" href="{{ '/news/' | relative_url }}">All news {% include icon.html name="arrow" size=16 %}</a>
+    </div>
+    <div class="news-grid">
+      {%- assign recent = site.news | sort: "date" | reverse -%}
+      {%- for item in recent limit: 3 %}{% include news-card.html item=item %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container pi-teaser" data-reveal>
+    <img class="pi-teaser__photo" src="{{ site.pi.photo | relative_url }}" alt="Portrait of {{ site.pi.name }}" width="200" height="212" loading="lazy">
+    <div>
+      <p class="eyebrow eyebrow--light">Principal Investigator</p>
+      <h2>{{ site.pi.name }}, Ph.D.</h2>
+      <p>{{ site.pi.title }} at CSULB. Ph.D., Iowa State University; postdoctoral fellow, The University of Texas at Austin. Prof. Madadi founded the MCF2 Lab in 2020 and has since mentored {{ n_students }} student researchers on projects supported by NSF, the ACS Petroleum Research Fund, NASA, the Army Research Office and the California State University.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="{{ '/pi/' | relative_url }}">Full profile {% include icon.html name="arrow" size=18 %}</a>
+        <a class="btn btn--ghost" href="mailto:{{ site.pi.email }}">{% include icon.html name="mail" size=18 %} Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <p class="funders__label">Our research is supported by</p>
+    <ul class="funder-logos" data-reveal>
+      {%- for f in site.data.funders %}
+      <li><a href="{{ f.url }}" target="_blank" rel="noopener" title="{{ f.name }}"><img src="{{ f.logo | relative_url }}" alt="{{ f.name }}" loading="lazy" decoding="async"></a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--alt cta-band">
+  <div class="container cta-band__inner" data-reveal>
+    <div>
+      <h2>Join the lab</h2>
+      <p>We welcome motivated CSULB undergraduate and graduate students interested in computational fluid dynamics.</p>
+    </div>
+    <a class="btn btn--primary" href="{{ '/join-us/' | relative_url }}">How to apply {% include icon.html name="arrow" size=18 %}</a>
+  </div>
+</section>

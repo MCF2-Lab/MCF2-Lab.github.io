@@ -1,0 +1,19 @@
+# Sponsors shown on the Home page. Logos are public-domain marks from Wikimedia Commons.
+- name: "National Science Foundation"
+  logo: /assets/media/funders/nsf.png
+  url: "https://www.nsf.gov"
+- name: "NASA"
+  logo: /assets/media/funders/nasa.png
+  url: "https://www.nasa.gov"
+- name: "U.S. Army Research Office"
+  logo: /assets/media/funders/army.png
+  url: "https://arl.devcom.army.mil/who-we-are/aro/"
+- name: "ACS Petroleum Research Fund"
+  logo: /assets/media/funders/acs.png
+  url: "https://www.acs.org/funding/funding-opportunities/petroleum-research-fund.html"
+- name: "Department of Defense"
+  logo: /assets/media/funders/dod.png
+  url: "https://www.defense.gov"
+- name: "California State University"
+  logo: /assets/media/funders/csu.png
+  url: "https://www.calstate.edu"

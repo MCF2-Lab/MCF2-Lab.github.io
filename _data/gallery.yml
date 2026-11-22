@@ -1,0 +1,47 @@
+# Research page gallery. Add `video:` to open an mp4 in the viewer.
+# `wide: true` tiles span two columns; keep the total a multiple of 4 cells.
+- title: "Impinging jets, three Reynolds numbers"
+  wide: true
+  src: /assets/media/projects/nsf-cijr-reynolds.jpg
+  video: /assets/media/projects/nsf-cijr-reynolds.mp4
+  alt: "Three confined impinging-jet reactors side by side with increasingly fine vortical structures"
+  caption: "Vortical structures in a confined impinging-jet reactor at jet Reynolds numbers 600, 1500 and 2700. NSF project."
+- title: "Confined impinging-jet reactor"
+  src: /assets/media/projects/nsf-cijr-render.jpg
+  alt: "Path-traced streamlines inside a confined impinging-jet reactor"
+  caption: "Confined impinging-jet reactor at a jet Reynolds number of 600: stream tubes colored by speed from blue (slow) to amber (fast). NSF project."
+- title: "Multi-inlet vortex reactor"
+  src: /assets/media/projects/nsf-mivr-render.jpg
+  alt: "Swirling stream tubes in a four-inlet vortex reactor"
+  caption: "Macroscale multi-inlet vortex reactor at an inlet Reynolds number of 6580, delayed detached-eddy simulation. NSF project."
+- title: "Vortex reactor, DDES"
+  src: /assets/media/projects/nsf-mivr-ddes-poster.jpg
+  video: /assets/media/projects/nsf-mivr-ddes.mp4
+  alt: "Turbulent structures rising through the outlet of a vortex reactor"
+  caption: "Instantaneous turbulent structures in the multi-inlet vortex reactor (DDES, coarse mesh). NSF project."
+- title: "Brake-wear plume of a heavy-duty truck"
+  position: "30% 50%"
+  src: /assets/media/projects/transport-truck-plume.jpg
+  alt: "Truck with a particle plume colored by particle age"
+  caption: "Brake-wear ultrafine particle plume beneath a heavy-duty truck, colored by particle age. CSU TRANSPORT project."
+- title: "Rocket thrust chamber and nozzle"
+  wide: true
+  contain: true
+  src: /assets/media/projects/cea2foam-flow-fields.png
+  alt: "Mach number and temperature fields in a rocket nozzle"
+  caption: "Mach number and temperature in a liquid-rocket thrust chamber and nozzle, from a case written by ceaToFoam."
+- title: "Resonant acoustic mixing physics"
+  wide: true
+  src: /assets/media/projects/ram-overview.jpg
+  contain: true
+  alt: "Faraday waves, contact lines and viscoelastic rod climbing"
+  caption: "Faraday waves in a vibrated vessel, contact lines and viscoelastic liquids: the building blocks of our resonant acoustic mixing simulations. ARO project."
+- title: "Acoustophoresis"
+  src: /assets/media/projects/acs-acoustophoresis.jpg
+  alt: "Small particles in streaming rolls and large particles crossing the channel"
+  caption: "Radiation force versus streaming: 5 µm and 0.5 µm particles in a standing acoustic wave. ACS PRF project."
+- title: "Lunar plume ejecta"
+  src: /assets/media/projects/nasa-mplan-ejecta.png
+  contain: true
+  alt: "Plume Mach number and ejected grain density near the surface"
+  caption: "Plume–surface interaction: gas Mach number with the sensor rings, and the density of grains ejected from one source patch. NASA project."

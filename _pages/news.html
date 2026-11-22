@@ -1,12 +1,30 @@
 ---
-layout: archive
 title: "News"
 permalink: /news/
-author_profile: true
+eyebrow: "News"
+lead: "Graduations, awards, conference talks and milestones from the MCF2 Lab."
+wide: true
 ---
-
-{% include base_path %}
-
-{% for post in site.news reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{%- assign items = site.news | sort: "date" | reverse -%}
+<section class="section">
+  <div class="container">
+    <div class="filters" data-filter-root="news">
+      <div class="filters__row" role="group" aria-label="Year">
+        <button type="button" class="filter-btn is-active" data-filter="year" data-value="all">All years</button>
+        {%- assign seen = "" -%}
+        {%- for it in items -%}{%- assign y = it.date | date: "%Y" -%}{%- unless seen contains y %}<button type="button" class="filter-btn" data-filter="year" data-value="{{ y }}">{{ y }}</button>{%- assign seen = seen | append: y | append: "," -%}{%- endunless -%}{%- endfor %}
+      </div>
+      <div class="filters__row" role="group" aria-label="Category">
+        <button type="button" class="filter-btn filter-btn--soft is-active" data-filter="cat" data-value="all">Everything</button>
+        {%- assign cats = items | map: "venue" | uniq -%}
+        {%- for c in cats %}<button type="button" class="filter-btn filter-btn--soft" data-filter="cat" data-value="{{ c | slugify }}">{{ c }}</button>{% endfor %}
+      </div>
+      <p class="filters__count" aria-live="polite" data-filter-count></p>
+    </div>
+    <div class="news-grid news-grid--all">
+      {%- for item in items %}{% include news-card.html item=item %}{% endfor %}
+    </div>
+    <p class="empty-state" data-filter-empty hidden>No news in this selection.</p>
+    <p class="muted small">Follow along with the <a href="{{ '/news/feed.xml' | relative_url }}">news feed</a>.</p>
+  </div>
+</section>
