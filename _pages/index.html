@@ -12,8 +12,9 @@ redirect_from:
 {%- assign n_students = site.data.team.current.size -%}
 {%- for g in site.data.team.alumni -%}{%- assign n_students = n_students | plus: g.people.size -%}{%- endfor -%}
 
-<section class="hero" aria-label="Introduction">
+<section class="hero hero--flow" aria-label="Introduction">
   <div class="hero__bg" aria-hidden="true"></div>
+  {% include flow-bg.html %}
   <div class="container hero__grid">
     <div class="hero__text">
       <p class="eyebrow eyebrow--light">California State University, Long Beach · Mechanical &amp; Aerospace Engineering</p>

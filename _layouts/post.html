@@ -10,7 +10,8 @@ layout: default
 {%- assign prev_i = idx | minus: 1 -%}
 {%- assign next_i = idx | plus: 1 -%}
 <article class="post">
-  <header class="page-hero page-hero--post">
+  <header class="page-hero page-hero--post page-hero--flow">
+    {% include flow-bg.html %}
     <div class="container container--narrow">
       <p class="eyebrow"><a href="{{ page.back_url | relative_url }}">{{ page.back_label }}</a> · {{ page.venue | default: "Update" }}</p>
       <h1>{{ page.title }}</h1>
