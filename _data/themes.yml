@@ -61,8 +61,8 @@
     At low pressure the continuum assumption fails and gas flows must be described
     kinetically. We study the efficiency and velocity distributions of the direct
     simulation Monte Carlo method and develop moment-based models that are faster than
-    Monte Carlo at similar accuracy. With HEPIA in Geneva we simulate supersonic and
-    transonic flow around re-entry capsules and the flush air data systems that measure
+    Monte Carlo at similar accuracy. Through an international collaboration we simulate
+    supersonic and transonic flow around re-entry capsules and the flush air data systems that measure
     it, and for NASA we model how landing plumes eject lunar regolith.
   keywords: [DSMC, kinetic theory, re-entry, flush air data systems, plume–surface interaction]
 

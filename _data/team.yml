@@ -167,24 +167,24 @@ alumni:
         next: "Rivian Automotive"
 
   - group: "Visiting scholars"
-    note: "Bachelor's thesis students from HEPIA, University of Applied Sciences and Arts Western Switzerland, Geneva, co-supervised with Prof. Roberto Putzu as part of our collaboration with HEPIA."
+    note: "Bachelor's thesis students who complete their thesis research in the lab through an international collaboration, under joint supervision."
     people:
       - name: "Julian Bjørgo"
-        degree: "HEPIA, Geneva"
+        degree: "Visiting B.S. thesis student"
         year: 2026
         thesis: "CFD-based assessment of subsonic transition and FADS performance for glider wing deployment"
         next: "Graded 6/6, avec félicitations du jury"
       - name: "André Costa Vinagre"
-        degree: "HEPIA, Geneva"
+        degree: "Visiting B.S. thesis student"
         year: 2026
         thesis: "CFD characterization of a supersonic FADS for a reentry glider"
         next: "Graded 6/6, avec félicitations du jury"
       - name: "Henry Nguyen"
-        degree: "HEPIA, Geneva"
+        degree: "Visiting B.S. thesis student"
         year: 2024
         thesis: "LES modeling of confined impinging jet mixers"
       - name: "Haroun Naina"
-        degree: "HEPIA, Geneva"
+        degree: "Visiting B.S. thesis student"
         year: 2022
         thesis: "Transient modeling of a multi-inlet vortex reactor"
         next: "Graduate student, EPFL"
